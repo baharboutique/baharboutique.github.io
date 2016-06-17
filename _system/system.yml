@@ -1,0 +1,13 @@
+pages:
+    title: Pages
+    icon: sitemap
+shop:
+    title: Shop
+    icon: shopping-cart
+    items:
+        products:
+            title: Products
+            icon: calendar
+        categories:
+            title: Categories
+            icon: folder

@@ -1,0 +1,56 @@
+title: Bahar Boutique
+description: ''
+url: 'https://baharboutique.github.io'
+permalink: none
+locale: de_DE
+timezone: Europe/Berlin
+sharing:
+    provider:
+        - facebook
+        - twitter
+        - google
+        - linkedin
+        - pinterest
+        - stumbleupon
+        - delicious
+        - reddit
+        - tumblr
+        - buffer
+        - vk
+    limit: 'false'
+    style: icons
+defaults:
+    -
+        scope:
+            path: ''
+            type: pages
+        values:
+            layout: page
+    -
+        scope:
+            path: ''
+            type: categories
+        values:
+            layout: category
+    -
+        scope:
+            path: ''
+            type: products
+        values:
+            layout: product
+collections:
+    products:
+        output: true
+        permalink: '/:path.html'
+    categories:
+        output: true
+        permalink: '/:path.html'
+mediaurl: _media
+baseurl: /
+comments:
+    provider: '1'
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - bower.json

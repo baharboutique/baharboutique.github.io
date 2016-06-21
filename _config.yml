@@ -55,4 +55,5 @@ exclude:
     - bower.json
 relative_permalinks: 'false'
 analytics:
-    provider: '1'
+    provider: google_analytics
+    tracking_id: UA-77304209-1

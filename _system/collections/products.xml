@@ -3,8 +3,6 @@
     <fields>
         <fieldset name="general">
             <field name="image1" type="media" label="Image Front" filter="string" class="form-control" directory="_media/products" />
-            <field name="image2" type="media" label="Image Side" filter="string" class="form-control" directory="_media/products" />
-            <field name="image3" type="media" label="Image Back" filter="string" class="form-control" directory="_media/products" />
         </fieldset>
         <fieldset name="options">
             <field name="category" type="itemlist" label="Kategorie" filter="string" class="form-control" admintable="true" required="true" app="categories"/>

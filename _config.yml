@@ -47,7 +47,7 @@ collections:
 mediaurl: _media
 baseurl: /
 comments:
-    provider: '1'
+    provider: disqus
 exclude:
     - vendor
     - Gemfile
@@ -57,3 +57,13 @@ relative_permalinks: 'false'
 analytics:
     provider: google_analytics
     tracking_id: UA-77304209-1
+profiles:
+    provider:
+        - facebook
+        - twitter
+        - google
+        - pinterest
+    facebook: 'https://www.facebook.com/baharboutiquetesettuer'
+    twitter: 'https://twitter.com/Bahar_Boutique'
+    google: 'https://plus.google.com/105140503278343271378'
+    pinterest: 'https://de.pinterest.com/baharboutiquete/'

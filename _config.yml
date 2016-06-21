@@ -47,7 +47,7 @@ collections:
 mediaurl: _media
 baseurl: /
 comments:
-    provider: disqus
+    provider: '1'
 exclude:
     - vendor
     - Gemfile

@@ -1,6 +1,6 @@
-title: 'Bahar Boutique Tesettür'
+title: Bahar Boutique
+description: ''
 url: 'https://baharboutique.github.io'
-permalink: none
 locale: de_DE
 timezone: Europe/Berlin
 sharing:
@@ -49,21 +49,7 @@ baseurl: /
 comments:
     provider: '1'
 exclude:
-    - vendor
-    - Gemfile
-    - Gemfile.lock
-    - bower.json
-relative_permalinks: 'false'
-analytics:
-    provider: google_analytics
-    tracking_id: UA-77304209-1
-profiles:
-    provider:
-        - facebook
-        - twitter
-        - google
-        - pinterest
-    facebook: 'https://www.facebook.com/baharboutiquetesettuer'
-    twitter: 'https://twitter.com/Bahar_Boutique'
-    google: 'https://plus.google.com/105140503278343271378'
-    pinterest: 'https://de.pinterest.com/baharboutiquete/'
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - bower.json

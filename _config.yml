@@ -1,5 +1,4 @@
-title: Bahar Boutique
-description: ''
+title: 'Bahar Boutique Tesettür'
 url: 'https://baharboutique.github.io'
 permalink: none
 locale: de_DE
@@ -50,7 +49,10 @@ baseurl: /
 comments:
     provider: '1'
 exclude:
-  - vendor
-  - Gemfile
-  - Gemfile.lock
-  - bower.json
+    - vendor
+    - Gemfile
+    - Gemfile.lock
+    - bower.json
+relative_permalinks: 'false'
+analytics:
+    provider: '1'

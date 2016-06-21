@@ -7,7 +7,7 @@ products:
     items:
         products:
             title: Products
-            icon: calendar
+            icon: tags
         categories:
             title: Categories
             icon: folder

@@ -53,3 +53,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - bower.json
+assets:
+  digest: true
+  js_compressor: false
+  css_compressor: false
+  sources:
+    - _media

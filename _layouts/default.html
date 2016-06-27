@@ -10,11 +10,10 @@
         <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">``
         <![endif]-->
-        <title>{{ page.title | markdownify | strip_html }} | {{ site.title }}</title>
-        <meta name="description" content="{{ description | xml_escape }}">
-        <meta name="author" content="{{ site.author }}">
+        <title>Queen, premium HTML5&AMP;CSS3 template</title>
+        <meta name="description" content="Queen, premium HTML5&amp;CSS3 template">
+        <meta name="author" content="MosaicDesign">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% elsif page.tags %}{{ page.tags | join: ', ' }}{% else %}{{ site.keywords }}{% endif %}" />
 
 
         <link rel="stylesheet" type="text/css" href="css/theme-style.css">
@@ -81,6 +80,56 @@
                     </div>
                 </div>
                 <a href="#" id="header-login-close"><i class="icon-remove"></i> </a>
+            </div>
+            <div class="header-top-row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- header-account menu -->
+                            <ul class="account-menu-list list-unstyled">
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Cart</a></li>
+                            </ul>
+                            <!-- /header-account menu -->
+                        </div>
+                        <div class="col-md-4">
+                            <div id="first-welcome">
+                                <p> Welcome visitor you can  <a href="#" id="header-login"> Login or Sign Up</a></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="pull-right">
+                                <!-- header - language -->
+                                <div id="lang" class="pull-right">
+                                    <a href="" class="lang-title"><img src="img/f-gb.png" alt="English" title="English"> English <i class="icon-angle-down"></i> </a>
+                                    <ul class="list-unstyled lang-item">
+                                        <li class="active"><a href=""><img src="img/f-gb.png" alt="English" title="English"> English</a></li>
+                                        <li><a href=""><img src="img/f-fr.png" alt="French" title="French"> French</a></li>
+                                    </ul>
+                                </div>
+                                <!-- /header - language -->
+                                <!-- header - currency -->
+                                <div class="currency pull-right">
+                                    <ul class="currency-list list-unstyled list-inline">
+                                        <li><a href="#">€</a></li>
+                                        <li><a href="#" class="active">$</a></li>
+                                        <li><a href="#">£</a></li>
+                                    </ul>
+                                </div>
+                                <!-- /header - currency -->
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
             </div>
             <!-- /header-top-row -->
             <div class="header-bg">
@@ -435,413 +484,10 @@
             </div>
         </header>
         <!-- End header -->
-        <!--Slider Revolution-->
-        <section>
-            <div class="tp-banner-container">
-                <div class="tp-banner" >
-                    <ul class="list-unstyled">	<!-- SLIDE  -->
-                        <li data-transition="fade" data-slotamount="7" data-masterspeed="200" data-thumb="img/preview/slider/homeslider_thumb1.jpg" data-delay="10000"  data-saveperformance="on"  data-title="Ken Burns Slide">
-                            <!-- MAIN IMAGE -->
-                            <img src="img/preview/slider/1_bg.jpg"  alt="Queen news"  data-bgposition="right top" data-kenburns="on" data-duration="12000" data-ease="Power0.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center center">
-                            <!-- LAYERS -->
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption active_heavy_100 skewfromleftshort fadeout tp-resizeme rs-parallaxlevel-10"
-                                 data-x="150"
-                                 data-y="143" 
-                                 data-speed="500"
-                                 data-start="400"
-                                 data-easing="Power3.easeInOut"
-                                 data-splitin="chars"
-                                 data-splitout="none"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="300">Queen - template
-                            </div>
-
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption light_heavy_70 skewfromrightshort fadeout tp-resizeme rs-parallaxlevel-10"
-                                 data-x="150"
-                                 data-y="270" 
-                                 data-speed="500"
-                                 data-start="2200"
-                                 data-easing="Power3.easeInOut"
-                                 data-splitin="chars"
-                                 data-splitout="none"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="300">- with new upgrades
-                            </div>
-
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption light_heavy_70 skewfromrightshort fadeout tp-resizeme rs-parallaxlevel-10"
-                                 data-x="150"
-                                 data-y="370" 
-                                 data-speed="500"
-                                 data-start="3200"
-                                 data-easing="Power3.easeInOut"
-                                 data-splitin="chars"
-                                 data-splitout="none"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="300">- new Slider Revolution
-                            </div>
-
-                        </li>
-                        <li data-transition="fade" data-slotamount="7" data-masterspeed="200" data-thumb="img/preview/slider/homeslider_thumb2.jpg" data-delay="10000"  data-saveperformance="on"  data-title="Ken Burns Slide">
-                            <!-- MAIN IMAGE -->
-                            <img src="img/preview/slider/2_bg.jpg"  alt="Queen news"  data-bgposition="right top" data-kenburns="on" data-duration="12000" data-ease="Power0.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center center">
-                            <!-- LAYERS -->
-                            <div class="tp-caption active_heavy_100 skewfromleftshort fadeout tp-resizeme rs-parallaxlevel-10"
-                                 data-x="900"
-                                 data-y="143" 
-                                 data-speed="500"
-                                 data-start="400"
-                                 data-easing="Power3.easeInOut"
-                                 data-splitin="chars"
-                                 data-splitout="none"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="300">New pages
-                            </div>
-
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption light_heavy_70 skewfromrightshort fadeout tp-resizeme rs-parallaxlevel-10"
-                                 data-x="900"
-                                 data-y="270" 
-                                 data-speed="500"
-                                 data-start="2200"
-                                 data-easing="Power3.easeInOut"
-                                 data-splitin="chars"
-                                 data-splitout="none"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="300">- CSS upgrade
-                            </div>
-
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption light_heavy_70 skewfromrightshort fadeout tp-resizeme rs-parallaxlevel-10"
-                                 data-x="900"
-                                 data-y="370" 
-                                 data-speed="500"
-                                 data-start="3200"
-                                 data-easing="Power3.easeInOut"
-                                 data-splitin="chars"
-                                 data-splitout="none"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="300">- new JS upgrade
-                            </div>
-
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <!-- End Slider Revolution-->
-       
-       
-        
-        
-        <!-- Section Services -->
-        <section>
-            <div class="block block-services color-scheme-3">
-                <div class="container">
-                    <div class="header-1">
-                        <h1>Services</h1>
-                        <div class="header-bottom-line"></div>
-                        <h3>Maecenas viverra mi non ante aliquet</h3>
-                    </div>
-                    <div class="row">
-                        <article class="col-xs-12 col-sm-6 col-md-3">
-                            <i class="icon-flag pull-left"></i>
-                            <a href="#">Playground</a>
-                            <p>Duis autem vel eum iriure dolor in hendrerit  vulputate.</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-3">
-                            <i class="icon-coffee pull-left"></i>
-                            <a href="#">Hot coffee</a>
-                            <p>Duis autem vel eum iriure dolor in hendrerit vulputate.</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-3">
-                            <i class="icon-retweet pull-left"></i>
-                            <a href="#">Money exchange</a>
-                            <p>Duis autem vel eum iriure dolor in hendrerit vulputate.</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-3">
-                            <i class=" icon-check pull-left"></i>
-                            <a href="#">Testing</a>
-                            <p>Duis autem vel eum iriure dolor in hendrerit vulputate.</p>
-                        </article>
-                    </div>
-                    <div class="row">
-                        <article class="col-xs-12 col-sm-6 col-md-3">
-                            <i class="icon-heart-empty pull-left"></i>
-                            <a href="#">Offer your request</a>
-                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-3">
-                            <i class="icon-umbrella pull-left"></i>
-                            <a href="#">Packing your request</a>
-                            <p>Duis autem vel iriure dolor in hendrerit in vulputate.</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-3">
-                            <i class="icon-bullhorn pull-left"></i>
-                            <a href="#">Bonus</a>
-                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-3">
-                            <i class="icon-truck pull-left"></i>
-                            <a href="#">Free shipping</a>
-                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Section Services -->
-        <!-- Section client say-->
-        <section id="clients-say">
-            <div class="block block-what-clients-say">
-                <div class="container">
-                    <div class="header-1">
-                        <h1>What clients say</h1>
-                        <div class="header-bottom-line"></div>
-                        <div class="block-toolbar">
-                            <a href="javascript:;" data-role="prev" class="prev"><i class="icon-angle-left"></i></a>
-                            <a href="javascript:;" data-role="next" class="next"><i class="icon-angle-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul id="what-clients-say" class="list-unstyled">
-                                <li>
-                                    <h4>March 30, 2014</h4>
-                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                                    <h3>Sarah Conor<small class="text-muted"> / Director</small></h3>
-                                </li>
-                                <li>
-                                    <h4>March 20, 2014</h4>
-                                    <p>Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                                    <h3>John Can<small class="text-muted"> / Manager</small></h3>
-                                </li>
-                                <li>
-                                    <h4>March 10, 2014</h4>
-                                    <p>Sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                                    <h3>Tom Conor<small class="text-muted"> / Buyer</small></h3>
-                                </li>
-                                <li>
-                                    <h4>March 1, 2014</h4>
-                                    <p>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                                    <h3>Jarry Conor<small class="text-muted"> / Buyer</small></h3>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Section client say-->
-        <!-- Section partners or brands -->
-        <section>
-            <div class="block block-partners color-scheme-3">
-                <div class="container">
-                    <div class="header-1">
-                        <h1>Marken und Designer</h1>
-                        <div class="header-bottom-line"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="flexisel">
-                                <li><img src="img/preview/partner1.jpg" alt="image"></li>
-                                <li><img src="img/preview/partner2.jpg" alt="image"></li>
-                                <li><img src="img/preview/partner3.jpg" alt="image"></li>
-                                <li><img src="img/preview/partner4.jpg" alt="image"></li>                                                 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Section partners or brands -->
-        <!-- Section flickr, about, posts-->
-        <section>
-            <div class="block color-scheme-3">
-                <div class="container">
-                    <div class="row">
-                        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="block-3-col">
-                                <div class="header-2">
-                                    <h3>Flickr Feed</h3>
-                                </div>
-                                <div class="block-inner block-fl-feed">
-                                    <div class="row">
-                                        <div class="col-md-4">
-
-                                            <a href="#">
-                                                <img src="http://placehold.it/400x280" alt="Image" class="img-responsive">
-                                            </a> 
-
-                                        </div>
-                                        <div class="col-md-4">
-
-                                            <a href="#">
-                                                <img src="http://placehold.it/400x280" alt="Image" class="img-responsive">
-                                            </a> 
-
-                                        </div>
-                                        <div class="col-md-4">
-
-                                            <a href="#">
-                                                <img src="http://placehold.it/400x280" alt="Image" class="img-responsive">
-                                            </a> 
-
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4">
-
-                                            <a href="#">
-                                                <img src="http://placehold.it/400x280" alt="Image" class="img-responsive">
-                                            </a> 
-
-                                        </div>
-                                        <div class="col-md-4">
-
-                                            <a href="#">
-                                                <img src="http://placehold.it/400x280" alt="Image" class="img-responsive">
-                                            </a> 
-
-                                        </div>
-                                        <div class="col-md-4">
-
-                                            <a href="#">
-                                                <img src="http://placehold.it/400x280" alt="Image" class="img-responsive">
-                                            </a> 
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="block-3-col">
-                                <div class="header-2">
-                                    <h3>Who we are</h3>
-                                </div>
-                                <div class="block-inner">
-                                    <p>Ut pretium, sapien blandi vulputate mattis, lorem elit bibendum mi, quis dignissim ipsum neque.</p>
-                                    <ul class="list-unstyled">
-                                        <li>Aliquam feugiat eleifend</li>
-                                        <li>Fusce sit amet orci quis arcu</li>
-                                    </ul>
-                                    <p>Phasellus in risus quis lectus iaculis tate.</p> 
-                                </div>
-
-                            </div>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="block-3-col">
-                                <div class="header-2">
-                                    <h3>Latest Posts</h3>
-                                </div>
-                                <div class="block-inner block-latest-posts-list">
-                                    <div class="row">
-                                        <div class="col-md-4">
-
-                                            <a href="#">
-                                                <img src="http://placehold.it/400x280" alt="Image" class="img-responsive">
-                                            </a>
-
-                                        </div>
-                                        <div class="col-md-8">
-                                            <h4>Qui dolorem est</h4>
-                                            <p>Ut pretium, sapien blandi vulputate mattis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4">
-
-                                            <a href="#">
-                                                <img src="http://placehold.it/400x280" alt="Image" class="img-responsive">
-                                            </a>
-
-                                        </div>
-                                        <div class="col-md-8">
-                                            <h4>Qui dolorem est</h4>
-                                            <p>Ut pretium, sapien blandi vulputate mattis.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Section flickr, about, posts-->
+        {{ content }}
         <!-- Section footer -->
         <footer id="footer">
-            <div class="block footer-block">
-                <div class="container">
-                    <div class="header-1">
-                        <h1>And more</h1>
-                        <div class="header-bottom-line"></div>
-                        <h3>Our additional services</h3>
-                    </div>
-                    <div class="row">
-                        <div class="payment-service">
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                                <div class="payment-service-block">
-                                    <a href="#">
-                                        <span class="payment-service-icon"><i class="glyphicon glyphicon-saved"></i></span>
-                                        <div class="payment-service-content">
-                                            <h2 class="payment-service-main">Money Back Guarantee</h2>
-                                            <h3 class="payment-service-sub">Personalized to your needs</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                                <div class="payment-service-block">
-                                    <a href="#">
-                                        <span class="payment-service-icon"><i class="glyphicon glyphicon-usd"></i></span>
-                                        <div class="payment-service-content">
-                                            <h2 class="payment-service-main">In Store Exchance</h2>
-                                            <h3 class="payment-service-sub">Personalized to your needs</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                                <div class="payment-service-block">
-                                    <a href="#">
-                                        <span class="payment-service-icon"><i class="glyphicon glyphicon-gift"></i></span>
-                                        <div class="payment-service-content">
-                                            <h2 class="payment-service-main">Free Shipping</h2>
-                                            <h3 class="payment-service-sub">Personalized to your needs</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                                <div class="payment-service-block">
-                                    <a href="#">
-                                        <span class="payment-service-icon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <div class="payment-service-content">
-                                            <h2 class="payment-service-main">100% Secure Payment</h2>
-                                            <h3 class="payment-service-sub">Personalized to your needs</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                          
             <div class="footer-information">
                 <div class="container">
                     <div class="row">
@@ -909,7 +555,7 @@
                         <div class="col-md-12">
                             <a href="index.html" class="logo-copy pull-left"></a>
                             <p class="pull-left">
-                                <a href="#">Copyright © 2016</a> baharboutique.com | Alle Rechte vorbehalten.<br>Theme by <a href="http://mosaicdesign.uz" target="_blank">Mosaic Design</a>
+                                <a href="">Copyright © 2014</a> Queen | All rights reserved.<br>Designed by <a href="http://mosaicdesign.uz" target="_blank">Mosaic Design</a>
                             </p>
                             <ul class="footer-payments pull-right">
                                 <li><img src="img/payment-maestro.jpg" alt="payment" /></li>

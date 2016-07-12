@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<section>
+  <div class="color-scheme-3">
+    <div class="container">
+      <p>&nbsp;</p>
+      <div class="header-1">
+        <h1>{{ page.title }}</h1>
+        <div class="header-bottom-line"></div>
+        {{ content }}
+      </div>
+      <div class="row">
+        <div class="product-section col-xs-12">
+          <div class="row">
+            {% assign products = site.products | where: 'category', page.slug %}
+            {% for item in products %}
+            <article class="col-xs-12 col-sm-12 col-md-4 col-lg-3 text-center">
+              <div class="product">
+                <figure class="figure-hover-overlay">                                    
+                  <a href="{{ item.url }}"  class="figure-href"></a>
+                  <img src="http://placehold.it/400x450" alt="Image" class="img-responsive">
+
+                  <span class="bar"></span>
+                </figure>
+                <div class="product-caption">
+                  <a href="#" class="product-name">{{ item.title }}</a>
+                  <p class="product-price">&euro;{{ item.price }}</p>
+                </div>
+              </div>
+            </article>
+            {% endfor %}
+          </div>
+        </div>
+        
+      </div>
+
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Less Variables
+   ========================================================================== */
+
+.raleway { font-family: 'Raleway', sans-serif; }
+
+.animate (@duration: 1s, @delay: .2s, @timing-function: ease) {
+    -webkit-animation-duration: @duration;
+    -webkit-animation-delay: @delay;
+    -webkit-animation-timing-function: @timing-function;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-duration: @duration;
+    -moz-animation-delay: @delay;
+    -moz-animation-timing-function: @timing-function;
+    -moz-animation-fill-mode: both;
+    -ms-animation-duration: @duration;
+    -ms-animation-delay: @delay;
+    -ms-animation-timing-function: @timing-function;
+    -ms-animation-fill-mode: both;
+    -o-animation-duration: @duration;
+    -o-animation-delay: @delay;
+    -o-animation-timing-function: @timing-function;
+    -o-animation-fill-mode: both;
+    animation-duration: @duration;
+    animation-delay: @delay;
+    animation-timing-function: @timing-function;
+    animation-fill-mode: both;
+}
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius !important;
+    -moz-border-radius: @radius !important;
+    border-radius: @radius !important;
+}
+
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+    -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+    -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+    border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+.border-box-sizing {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.transition (@prop: all, @time: 1s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
+
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+    -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+
+.quick-gradient (@origin: left, @alpha: 0.2) {
+    background-image: -webkit-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -moz-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -o-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -ms-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+}
+
+
+
+/* ============================== Skin Variables ============================ */
+@skin:"shop";
+@color1:#4f5367;
+@color2:#f0f0f0;
+@color3:#9f98ad;
+@color4:#fff;
+@color5:#ee4a42;
+/* ==========================================================================
+   Skins
+
+# @skin:"default";
+@color1:#7a665f;
+@color2:#b39e89;
+@color3:#b5d408;
+@color4:#f1ebdf;
+
+# Business
+@skin:"business";
+@color1:#0e4257;
+@color2:#3f8dab;
+@color3:#880000;
+
+
+
+
+
+
+
+
+   ========================================================================== */

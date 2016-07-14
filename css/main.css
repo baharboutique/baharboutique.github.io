@@ -441,11 +441,11 @@ blockquote p,.block-form blockquote p {
 }
 
 #header .header-logo {
-    width: 140px;
-    height: 50px;
+    width: 76px;
+    height: 75px;
     background: url("../img/logo-big-shop.png") no-repeat;
     display: block;
-    margin: 0;
+    margin: -12px 0;
 }
 
 #header .header-main-fixed {

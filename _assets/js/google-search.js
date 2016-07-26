@@ -1,4 +1,4 @@
-var google_cse_key = '014812861817308790526:zsk1s3akajm';
+var google_cse_key = '016467579056543974583:cdq6cs7vycy';
 
 // change search urls
 function pushState(path) {

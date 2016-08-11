@@ -1,0 +1,15 @@
+url: 'http://dev.abemedia.co.uk:4000'
+assets:
+  digest: true
+  js_compressor: false
+  css_compressor: false
+  less:
+    relative_urls: false
+  sources:
+    - _assets/bower
+    - _assets/less
+    - _assets/images
+    - _assets/js
+    - _media
+exclude:
+  - .asset-cache

@@ -7,7 +7,8 @@ gem 'therubyracer'
 gem 'uglifier'
 gem 'yui-compressor'
 group :jekyll_plugins do
+  gem 'less'
   gem 'jekyll-assets'
   gem 'autoprefixer-rails'
-  gem 'less'
+  gem 'jekyll-seo-tag'
 end

@@ -1,0 +1,32 @@
+{
+  "name": "baharboutique",
+  "authors": [
+    "Adam Bouqdib <adam@abemedia.co.uk>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "_assets/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.12.4",
+    "jquery.easing": "^1.3.1",
+    "bootstrap": "^3.3.7",
+    "flexisel": "^0.1.1",
+    "jquery.transit": "^0.9.12",
+    "jcountdown": "~1.5.4",
+    "jpages": "https://github.com/luis-almeida/jPages.git#b6a51c90640c95d8ea4238f9196741eb9fb61531",
+    "responsiveslides": "https://github.com/viljamis/ResponsiveSlides.js.git#v1.55",
+    "elevatezoom": "https://github.com/elevateweb/elevatezoom.git#119b1e6ffc927b1eb72a0fa306398146851a6c34",
+    "lightbox2": "^2.8.2",
+    "font-awesome": "^4.6.3",
+    "jquery.scrollTo": "~1.4",
+    "jquery-gcse": "*",
+    "simplecart-js": "https://github.com/wojodesign/simplecart-js.git"
+  },
+  "resolutions": {
+    "jquery": "~1.12.4"
+  }
+}

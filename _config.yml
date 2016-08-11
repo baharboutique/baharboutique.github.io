@@ -31,12 +31,16 @@ defaults:
             type: categories
         values:
             layout: category_grid
+            seo:
+              type: SomeProducts
     -
         scope:
             path: ''
             type: products
         values:
             layout: product
+            seo:
+              type: Product
 collections:
     products:
         output: true
@@ -55,7 +59,11 @@ exclude:
   - bower.json
 assets:
   digest: true
-  js_compressor: false
-  css_compressor: false
+  js_compressor: true
+  css_compressor: true
   sources:
+    - _assets/bower
+    - _assets/less
+    - _assets/images
+    - _assets/js
     - _media

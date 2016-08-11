@@ -1,242 +1,210 @@
 ---
 layout: default
 ---
-
-<!-- Product detail sections-->
-
-
 <section>
-    <div class="color-scheme-3">
-        <div class="container">
-            <div class="row">
-                <div class="product-detail-section col-xs-12 col-sm-8 col-md-9 col-lg-9">
-                    <div class="product-list">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="product-image">
-                                    <img id="product-zoom"  src='http://placehold.it/400x450' data-zoom-image="http://placehold.it/800x900" alt="">
-                                    <div id="gal1">
+  <div class="color-scheme-3">
+    <div class="container">
+      <div class="row">
+        <div class="product-detail-section col-xs-12 col-sm-8 col-md-9 col-lg-9">
+          <div class="product-list">
+            <div class="row simpleCart_shelfItem">
+              <div class="hidden">
+                <span class="item_price">&euro;{{ page.price | replace: ',', '.' }}</span>
+                <span class="item_url">{{ site.url }}{{ page.url }}</span>
+                {% include img src=page.image1 width="90" class="item_thumb" %}
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="product-image">
+                  {% capture img_sm %}{% include img_path src=page.image1 width="62" height="70" %}{% endcapture %}
+                  {% capture img_md %}{% include img_path src=page.image1 width="400" height="450" %}{% endcapture %}
+                  {% capture img_lg %}{% include img_path src=page.image1 width="800" height="900" %}{% endcapture %}
+                  <img id="product-zoom"  src='{{ img_md }}' data-zoom-image="{{ img_lg }}" alt="{{ page.title }}">
+                  <div id="gal1">
 
-                                        <a href="javascript:;" data-image="http://placehold.it/400x450" data-zoom-image="http://placehold.it/800x900">
-                                            <img id="img_01" src="http://placehold.it/62x70" alt="">
-                                        </a>
-
-                                        <a href="javascript:;" data-image="http://placehold.it/400x450" data-zoom-image="http://placehold.it/800x900">
-                                            <img id="img_01" src="http://placehold.it/62x70"  alt="">
-                                        </a>
-
-                                        <a href="javascript:;"  data-image="http://placehold.it/400x450" data-zoom-image="http://placehold.it/800x900">
-                                            <img id="img_01" src="http://placehold.it/62x70" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-
-
-                            
-                                <h3>{{ .title }}</h3>
-                                <div class="product-rating">
-                                    <div class="stars">
-                                        <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
-                                    </div>
-                                </div>
-                                <div class="product-information">
-                                    <div class="clearfix"> 
-                                        <label class="pull-left">Brand:</label> <a href="#">Arsenal Sweet</a><br>
-                                    </div>
-                                    <div class="clearfix"> 
-                                        <label class="pull-left">Collection:</label> Summer collection
-                                    </div>
-                                    <div class="clearfix"> 
-                                        <label class="pull-left">Product Code:</label> Fashion 17
-                                    </div>
-                                    <div class="clearfix">
-                                        <label class="pull-left">Size:</label>
-                                        <select name="size" class="form-control">
-                                            <option value="" selected="selected">...</option>
-                                            <option value="1">L</option>
-                                            <option value="2">XL</option>
-                                            <option value="3">XLL</option>
-                                        </select>
-                                    </div>
-                                    <div class="clearfix">
-                                        <label class="pull-left">Availability:</label>
-                                        <p>30 items in stock</p>
-                                    </div>
-                                    <div class="clearfix">
-                                        <label class="pull-left">Quantity:</label>
-                                        <select name="quantity" class="form-control">
-                                            <option value="0" selected="selected">...</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="..." disabled>...</option>
-                                            <option value="30">30</option>
-                                        </select>
-                                    </div>
-                                    <div class="clearfix">
-                                        <label class="pull-left">Price:</label>
-                                        <p class="product-price"><span>$469.99</span> 450.99$</p>
-                                    </div>
-                                    <div class="header-1">
-                                        <div class="header-bottom-line"></div>
-                                    </div>
-                                    <div class="list-shopping-cart text-center">
-                                        <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
-                                        <a href="#" class="shoping"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-                                        <a href="#" title="Compare"><i class="glyphicon glyphicon-sort"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-border block-form">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-pills  nav-justified">
-                            <li class="active"><a href="#description" data-toggle="tab">Description</a></li>
-                            <li><a href="#additional" data-toggle="tab" class="disabled">Additional</a></li>
-                            <li><a href="#review" data-toggle="tab">Review</a></li>
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="description">
-                                <br>
-                                <h3>Produktbeschreibung</h3>
-                                <hr>
-                                <p>
-                                  {{ content }}
-                                </p>
-                            </div>
-                            <div class="tab-pane" id="additional">
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <h3>Sizes</h3>
-                                        <hr>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit ollit anim id est laborum.
-                                        </p>
-
-                                    </div>
-                                    <div class="col-md-4 block-color">
-                                        <h3>Colors</h3>
-                                        <hr>
-                                        <ul class="colors clearfix list-unstyled">
-                                            <li><a href="" rel="003d71"></a></li>
-                                            <li><a href="" rel="c42c39"></a></li>
-                                            <li><a href="" rel="f4bc08"></a></li>
-                                            <li><a href="" rel="02882c"></a></li>
-                                            <li><a href="" rel="000000"></a></li>
-                                            <li><a href="" rel="caccce"></a></li>
-                                            <li><a href="" rel="ffffff"></a></li>
-                                            <li><a href="" rel="f9e7b6"></a></li>
-                                            <li><a href="" rel="ef8a07"></a></li>
-                                            <li><a href="" rel="5a433f"></a></li>
-                                            <li><a href="" rel="ff9bb5"></a></li>
-                                            <li><a href="" rel="8c56a9"></a></li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h3>Other</h3>
-                                        <hr>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit ollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="tab-pane" id="review">
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h3>Clients review</h3>
-                                        <hr>
-                                        <div class="review-header">
-                                            <h5>John Doe</h5>
-                                            <div class="product-rating">
-                                                <div class="stars">
-                                                    <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
-                                                </div>
-                                            </div>
-                                            <small class="text-muted">26/03/2014</small>
-                                        </div>
-                                        <div class="review-body">
-                                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-                                        </div>
-                                        <hr>
-                                        <div class="review-header">
-                                            <h5>John Doe</h5>
-                                            <div class="product-rating">
-                                                <div class="stars">
-                                                    <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
-                                                </div>
-                                            </div>
-                                            <small class="text-muted">26/03/2014</small>
-                                        </div>
-                                        <div class="review-body">
-                                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-                                        </div>
-                                        <hr>
-                                    </div>
-                                </div>
-                                <form role="form" method="post" action="#">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="inputFirstName" class="control-label">First Name:<span class="text-error">*</span></label>
-                                                <div>
-                                                    <input type="text" class="form-control" id="inputFirstName">
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="inputCompany" class="control-label">Company:</label>
-                                                <div>
-                                                    <input type="text" class="form-control" id="inputCompany">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <textarea class="form-control">    </textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label  class="control-label">Your Rate:</label>
-                                                <div class="product-rating">
-                                                    <div class="stars">
-                                                        <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <input type="submit"  class="btn-default-1" value="Add Review">
-                                </form>
-
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-
+                    <a href="javascript:;" data-image="{{ img_md }}" data-zoom-image="{{ img_lg }}">
+                      <img id="img_01" src="{{ img_sm }}" alt="{{ page.title }}">
+                    </a>
+                  </div>
                 </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h3 class="item_name">{{ page.title }}</h3>
+                <div class="product-rating">
+                  <div class="stars">
+                    <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+                  </div>
+                </div>
+                <div class="product-information">
+                  {% if page.brand %}
+                  <div class="clearfix"> 
+                    <label class="pull-left">Hersteller:</label> <span class="item_brand">{{ page.brand }}</span>
+                  </div>
+                  {% endif %}
+                  {% if page.sku %}
+                  <div class="clearfix"> 
+                    <label class="pull-left">Produkt Code:</label> <span class="item_sku">{{ page.sku }}</span>
+                  </div>
+                  {% endif %}
+                  {% if page.sizes %}
+                  <div class="clearfix">
+                    <label class="pull-left">Größe:</label>
+                    <select name="size" class="item_size form-control">
+                      {% for size in page.sizes %}
+                      <option value="{{ size.name }}">{{ size.name }}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                  {% endif %}
+                  <div class="clearfix">
+                    <label class="pull-left">Menge:</label>
+                    <select name="quantity" class="form-control item_quantity">
+                      {% for i in (1..10) %}
+                      <option value="{{i}}">{{i}}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                  <div class="clearfix">
+                    <label class="pull-left">Preis:</label>
+                    <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }}</p>
+                  </div>
+                  <div class="header-1">
+                    <div class="header-bottom-line"></div>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn-default-1 item_add"><i class="glyphicon glyphicon-shopping-cart"></i> Jetzt Kaufen</button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="box-border block-form">
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills  nav-justified">
+              <li class="active"><a href="#description" data-toggle="tab">Description</a></li>
+              <li><a href="#additional" data-toggle="tab" class="disabled">Additional</a></li>
+              <li><a href="#review" data-toggle="tab">Review</a></li>
+            </ul>
 
-
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="description">
+                <br>
+                <h3>Produktbeschreibung</h3>
+                <hr>
+                {{ content }}
+              </div>
+              <div class="tab-pane" id="additional">
+                <br>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h3>Sizes</h3>
+                    <hr>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit ollit anim id est laborum.
+                    </p>
+                  </div>
+                  <div class="col-md-4 block-color">
+                    <h3>Colors</h3>
+                    <hr>
+                    <ul class="colors clearfix list-unstyled">
+                      <li><a href="" rel="003d71"></a></li>
+                      <li><a href="" rel="c42c39"></a></li>
+                      <li><a href="" rel="f4bc08"></a></li>
+                      <li><a href="" rel="02882c"></a></li>
+                      <li><a href="" rel="000000"></a></li>
+                      <li><a href="" rel="caccce"></a></li>
+                      <li><a href="" rel="ffffff"></a></li>
+                      <li><a href="" rel="f9e7b6"></a></li>
+                      <li><a href="" rel="ef8a07"></a></li>
+                      <li><a href="" rel="5a433f"></a></li>
+                      <li><a href="" rel="ff9bb5"></a></li>
+                      <li><a href="" rel="8c56a9"></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h3>Other</h3>
+                    <hr>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit ollit anim id est laborum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="review">
+                <br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Clients review</h3>
+                    <hr>
+                    <div class="review-header">
+                      <h5>John Doe</h5>
+                      <div class="product-rating">
+                        <div class="stars">
+                          <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+                        </div>
+                      </div>
+                      <small class="text-muted">26/03/2014</small>
+                    </div>
+                    <div class="review-body">
+                      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <hr>
+                    <div class="review-header">
+                      <h5>John Doe</h5>
+                      <div class="product-rating">
+                        <div class="stars">
+                          <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+                        </div>
+                      </div>
+                      <small class="text-muted">26/03/2014</small>
+                    </div>
+                    <div class="review-body">
+                      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+                <form role="form" method="post" action="#">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="inputFirstName" class="control-label">First Name:<span class="text-error">*</span></label>
+                        <div>
+                          <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="inputCompany" class="control-label">Company:</label>
+                        <div>
+                          <input type="text" class="form-control" id="inputCompany">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea class="form-control">  </textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label  class="control-label">Your Rate:</label>
+                        <div class="product-rating">
+                          <div class="stars">
+                            <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="submit"  class="btn-default-1" value="Add Review">
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>

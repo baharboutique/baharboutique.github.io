@@ -20,8 +20,7 @@ layout: default
               <div class="product">
                 <figure class="figure-hover-overlay">                                    
                   <a href="{{ item.url }}"  class="figure-href"></a>
-                  <img src="http://placehold.it/400x450" alt="Image" class="img-responsive">
-
+                  {% include img src=item.image1 width="400" height="450" title=item.title class='img-responsive' %}
                   <span class="bar"></span>
                 </figure>
                 <div class="product-caption">
@@ -33,10 +32,7 @@ layout: default
             {% endfor %}
           </div>
         </div>
-        
       </div>
-
-
     </div>
   </div>
 </section>

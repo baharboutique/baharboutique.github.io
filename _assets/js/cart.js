@@ -2,7 +2,7 @@
 simpleCart({
     checkout: {
         type: "PayPal",
-        email: "info@abemedia.co.uk"
+        email: "info@baharboutique.de"
     },
     
     currency: "EUR",

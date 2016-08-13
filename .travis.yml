@@ -27,14 +27,14 @@ script:
 - bower install
 - bundle exec jekyll build
 - set +e
-- bundle exec htmlproofer ./_site --allow-hash-href --check-html --http-status-ignore 0
+- bundle exec htmlproofer ./_site  --assume-extension --allow-hash-href --check-html --http-status-ignore 0
 - cd _site
 - touch .nojekyll
 - git init
 - git config user.name "Travis-CI"
 - git config user.email "travis@baharboutique.com"
 - git add .
-- git commit -m "Deployed to Github Pages"
+- git commit -m "Deployed to Github Pages" >/dev/null
 - git push --force --quiet "https://$GH_TOKEN@github.com/$REPO" master > /dev/null 2>&1
 
 git:

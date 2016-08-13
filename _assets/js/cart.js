@@ -17,13 +17,13 @@ simpleCart({
                     (item.get('size') ? 'Größe: ' + item.get('size') + '<br>' : '') + 
                     '</p>' +
                     '<a href="javascript:;" class="simpleCart_remove">Entfernen</a>';
-          }, attr: "name", label: "Name"} ,
+          }, attr: "product", label: "Produkt"} ,
         { attr: "price" , label: "Preis", view: 'currency' } ,
         { view: function(item, column){
             return  '<a href="javascript:;" class="simpleCart_decrement">-</a> ' +
                     item.quantity() + ' ' +
                     '<a href="javascript:;" class="simpleCart_increment">+</a>';
-          }, attr: "custom", label: "Menge"
+          }, attr: "quantity", label: "Menge"
         }
     ]
 });

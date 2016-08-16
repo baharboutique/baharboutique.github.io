@@ -13,6 +13,7 @@ notifications:
   email: webmaster@baharboutique.com
   
 before_install:
+- echo $TRAVIS_REPO_SLUG
 - gem install travis_dedup && travis-dedup $TRAVIS_REPO_SLUG $TRAVIS_ACCESS_TOKEN --branches
 - sudo apt-get -qq update
 - sudo apt-get -y install nodejs npm

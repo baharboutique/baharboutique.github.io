@@ -50,8 +50,6 @@ collections:
         permalink: '/:path.html'
 mediaurl: _media
 baseurl: /
-comments:
-    provider: '1'
 exclude:
   - vendor
   - Gemfile

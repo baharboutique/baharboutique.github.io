@@ -9,15 +9,11 @@ cache:
   - _assets/bower
   - node_modules
   
-env:
-  global:
-  - REPO=baharboutique/baharboutique.github.io
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  
 notifications:
   email: webmaster@baharboutique.com
   
 before_install:
+- gem install travis_dedup && travis-dedup $TRAVIS_REPO_SLUG $TRAVIS_ACCESS_TOKEN --branches
 - sudo apt-get -qq update
 - sudo apt-get -y install nodejs npm
 - npm install -g bower
@@ -35,7 +31,11 @@ script:
 - git config user.email "travis@baharboutique.com"
 - git add .
 - git commit -m "Deployed to Github Pages" >/dev/null
-- git push --force --quiet "https://$GH_TOKEN@github.com/$REPO" master > /dev/null 2>&1
+- git push --force --quiet "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" master > /dev/null 2>&1
 
 git:
   depth: 10
+
+branches:
+  only:
+  - source

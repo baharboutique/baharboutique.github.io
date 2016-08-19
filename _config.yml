@@ -1,5 +1,4 @@
-title: Bahar Boutique Tesettür
-description: ''
+title: 'Bahar Boutique Tesettür'
 url: 'https://baharboutique.github.io'
 locale: de_DE
 timezone: Europe/Berlin
@@ -32,7 +31,7 @@ defaults:
         values:
             layout: category_grid
             seo:
-              type: SomeProducts
+                type: SomeProducts
     -
         scope:
             path: ''
@@ -40,7 +39,7 @@ defaults:
         values:
             layout: product
             seo:
-              type: Product
+                type: Product
 collections:
     products:
         output: true
@@ -51,17 +50,33 @@ collections:
 mediaurl: _media
 baseurl: /
 exclude:
-  - vendor
-  - Gemfile
-  - Gemfile.lock
-  - bower.json
+    - vendor
+    - Gemfile
+    - Gemfile.lock
+    - bower.json
 assets:
-  digest: true
-  js_compressor: true
-  css_compressor: true
-  sources:
-    - _assets/bower
-    - _assets/less
-    - _assets/images
-    - _assets/js
-    - _media
+    digest: true
+    js_compressor: true
+    css_compressor: true
+    sources:
+        - _assets/bower
+        - _assets/less
+        - _assets/images
+        - _assets/js
+        - _media
+permalink: none
+relative_permalinks: 'false'
+analytics:
+    provider: google_analytics
+comments:
+    provider: '1'
+profiles:
+    provider:
+        - facebook
+        - twitter
+        - google
+        - pinterest
+    facebook: 'https://www.facebook.com/baharboutiquetesettuer'
+    twitter: 'https://twitter.com/Bahar_Boutique'
+    google: 'https://plus.google.com/105140503278343271378'
+    pinterest: 'https://de.pinterest.com/baharboutiquete/'

@@ -74,8 +74,6 @@ profiles:
     twitter: 'https://twitter.com/Bahar_Boutique'
     google: 'https://plus.google.com/105140503278343271378'
     pinterest: 'https://de.pinterest.com/baharboutiquete/'
-permalink: none
-relative_permalinks: 'false'
 analytics:
     provider: google_analytics
     tracking_id: UA-77304209-1

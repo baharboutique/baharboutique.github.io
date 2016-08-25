@@ -110,7 +110,7 @@
                 {% for item in site.pages %}{% unless item.slug == "index" %}{% unless item.parent %}{% unless item.menu == false %}
                 {% assign footerinfo = (site.pages | where: 'published', 1 | where: 'parent', item.slug | sort: 'order') %}
                   {% for item in footerinfo %}
-                    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                    <li><a href="{{ item.url }}"><i class="icon-angle-right"></i> {{ item.title }}</a></li>
                   {% endfor %}
                 {% endunless %}{% endunless %}{% endunless %}{% endfor %}
               </ul>

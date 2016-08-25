@@ -12,6 +12,9 @@ layout: default
       </div>
       <div class="row">
         <div class="col-sm-8 col-md-9 col-lg-9">
+          {% if page.image %}
+            {% include img src=page.image width="500" %}
+          {% endif %}
           {{ content }}
         </div>
       </div>

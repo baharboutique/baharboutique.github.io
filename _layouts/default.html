@@ -106,6 +106,7 @@
                 <h3>Information</h3>
               </div>
               <ul class="footer-categories list-unstyled">
+                <li><a href="kontakt.html"><i class="icon-angle-right"></i> Kontakt</a></li>
                 {% for item in site.pages %}{% unless item.slug == "index" %}{% unless item.parent %}{% unless item.menu == false %}
                 {% assign footerinfo = (site.pages | where: 'published', 1 | where: 'parent', item.slug | sort: 'order') %}
                   {% for item in footerinfo %}

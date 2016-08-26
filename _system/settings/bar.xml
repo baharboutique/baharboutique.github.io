@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="foo" label="FooBar">
+        <fieldset name="foo">
+            <field name="bar" type="text" label="Bar" description="The Bar field" class="form-control" filter="string" />
+        </fieldset>
+    </fields>
+</form>

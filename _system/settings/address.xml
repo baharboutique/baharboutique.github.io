@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+        <fieldset name="site">
+            <field name="address" type="text" label="Adresse" description="Strasse und Hausnummer" class="form-control" filter="string" />
+            <field name="zipcity" type="text" label="PLZ / Ort" description="Postleitzahl und Ort" class="form-control" filter="string" />
+            <field name="country" type="country" label="Land" description="Land" class="form-control" filter="string" />
+            <field name="tel" type="tel" label="Telefon" description="Telefonnummer" class="form-control" filter="string" />
+            <field name="fax" type="tel" label="Fax" description="Faxnummer" class="form-control" filter="string" />
+        </fieldset>
+    </fields>
+</form>

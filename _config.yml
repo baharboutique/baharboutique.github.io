@@ -79,9 +79,9 @@ analytics:
     tracking_id: UA-77304209-1
 comments:
     provider: '1'
-permalink: none
-relative_permalinks: 'false'
+
 address: 'Gröpelinger Heerstr. 213'
 zipcity: '28359 Bremen'
-country: Deutschland
+country: 'Deutschland'
 tel: '+49(0)421 39094188'
+email: 'info@baharboutique.com'

@@ -14,7 +14,7 @@ layout: default
       <div class="row">
         <div class="product-section col-xs-12">
           <div class="row">
-            {% assign products = site.products | where: 'category', page.slug %}
+            {% assign products = site.products | where: 'category', page.slug | where: 'published', 1 %}
             {% for item in products %}
             <article class="col-xs-12 col-sm-12 col-md-4 col-lg-3 text-center">
               <div class="product">

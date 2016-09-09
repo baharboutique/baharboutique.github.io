@@ -15,9 +15,9 @@ layout: default
               </div>
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="product-image">
-                  {% capture img_sm %}{% include img_path src=page.image1 width="62" height="70" %}{% endcapture %}
-                  {% capture img_md %}{% include img_path src=page.image1 width="400" height="450" %}{% endcapture %}
-                  {% capture img_lg %}{% include img_path src=page.image1 width="800" height="900" %}{% endcapture %}
+                  {% capture img_sm %}{% include img_path src=page.image1 width="62" height="" %}{% endcapture %}
+                  {% capture img_md %}{% include img_path src=page.image1 width="400" height="" %}{% endcapture %}
+                  {% capture img_lg %}{% include img_path src=page.image1 width="800" height="" %}{% endcapture %}
                   <img id="product-zoom"  src='{{ img_md }}' data-zoom-image="{{ img_lg }}" alt="{{ page.title }}">
                   <div id="gal1">
 

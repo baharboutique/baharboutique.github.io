@@ -11,14 +11,16 @@ layout: default
         <div class="header-bottom-line"></div>
       </div>
       <div class="row">
+        {% if page.image %}
         <div class="col-md-4">
-          {% if page.image %}
             <p> {% include img src=page.image width="250" %} </p>
-          {% endif %}
         </div>
         <div class="col-md-8">
           {{ content }}
         </div>
+        {% else %}
+          {{ content }}
+        {% endif %}
       </div>
     </div>
   </div>

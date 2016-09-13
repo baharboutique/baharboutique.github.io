@@ -11,7 +11,7 @@ layout: default
               <div class="hidden">
                 <span class="item_price">&euro;{{ page.price | replace: ',', '.' }}</span>
                 <span class="item_url">{{ site.url }}{{ page.url }}</span>
-                {% include img src=page.image1 width="90" class="item_thumb" %}
+                {% include img src=page.image1 width="90" class="item_thumb" title=page.title %}
               </div>
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="product-image">
@@ -36,12 +36,12 @@ layout: default
                 </div>
                 <div class="product-information">
                   {% if page.brand %}
-                  <div class="clearfix"> 
+                  <div class="clearfix">
                     <label class="pull-left">Hersteller:</label> <span class="item_brand">{{ page.brand }}</span>
                   </div>
                   {% endif %}
                   {% if page.sku %}
-                  <div class="clearfix"> 
+                  <div class="clearfix">
                     <label class="pull-left">Produkt Code:</label> <span class="item_sku">{{ page.sku }}</span>
                   </div>
                   {% endif %}

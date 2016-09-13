@@ -9,8 +9,13 @@
             <field name="price" type="text" label="Preis" filter="string" class="form-control" admintable="true" />
             <field name="sku" type="text" label="SKU" filter="string" class="form-control" />
             <field name="brand" type="text" label="Marke/Hersteller" filter="string" class="form-control" admintable="true" />
+            <field name="id" type="uuid" uuid="ai" filter="integer" />
         </fieldset>
-        
+
+        <fieldset name="gallery" title="Fotos">
+            <field name="gallery" type="gallery" filter="array" label="Gallery" id="id" path="_media/products" />
+        </fieldset>
+
         <fieldset name="sizes" title="Größen">
             <field name="sizes" type="multiform" label="Größen" filter="array" default='[{"name": "S"}, {"name": "M"}, {"name": "L"}]'>
                 <field name="name" type="text" label="Größe" filter="string" class="form-control" />

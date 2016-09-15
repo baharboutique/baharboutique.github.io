@@ -65,7 +65,7 @@
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url('fonts/glyphicons-halflings-regular.eot');
-    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
         url('fonts/glyphicons-halflings-regular.woff') format('woff'),
         url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
         url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
@@ -85,16 +85,16 @@ p{color: #555; font-family: "PTSans";}
 .icon-1half { font-size: 1.5em; }
 .block { padding: 60px 0; .animate; } // We'll add padding to the top and bottom of each block, to separate each from the adjacent ones.
 .btn-default-1{
-    border: 1px solid @color4; color: @color4; padding: 10px 20px;  text-transform: uppercase;
+    border: 1px solid @color5; background-color:@color5; color: @color4; padding: 10px 20px;  text-transform: uppercase;
     &:hover{
-        text-decoration: none; background-color:@color5; color: @color4; border-color: @color5;
+        text-decoration: none; background-color:@color4; color: @color5; border-color: @color5;
     }
 }
 .btn-read{
-    border: 1px solid @color3; color: @color1; padding: 10px 20px;  text-transform: uppercase; margin: 10px auto 20px; display: inline-block; 
+    border: 1px solid @color3; color: @color1; padding: 10px 20px;  text-transform: uppercase; margin: 10px auto 20px; display: inline-block;
     &:hover{
         text-decoration: none; background-color:@color5; color: @color4; border-color: @color5;
-    } 
+    }
 }
 blockquote p, .block-form blockquote p{color: @color1; font-size: 16px; }
 .form-control{
@@ -154,9 +154,6 @@ Revolution slider
             :-ms-input-placeholder { /* Internet Explorer 10+ */
                 color:  @color3;
             }
-            .btn-default-1:hover{
-                background-color: @color5; border-color: @color5; color: @color4;
-            }
         }
         #header-login-close{
             position: absolute; right: 20px; top: 15px; line-height: 24px; text-align: center;
@@ -188,7 +185,7 @@ Revolution slider
         li{
             display: inline-block; padding:10px 15px 10px 0;
             a{
-                color:@color2;font-size:13px; 
+                color:@color2;font-size:13px;
                 text-decoration: none;
                 &:hover{
                     color:@color5;
@@ -208,14 +205,14 @@ Revolution slider
                 }
             }
         }
-    } 
+    }
     .currency{
         ul{
             margin: 0; padding: 7px 0;
             li{
                 a{
-                    display: block; line-height: 24px; text-align: center; height: 26px; width: 26px; border: 1px solid @color3; 
-                    border-radius: 40px; color: @color2; 
+                    display: block; line-height: 24px; text-align: center; height: 26px; width: 26px; border: 1px solid @color3;
+                    border-radius: 40px; color: @color2;
                     &:hover, &.active{
                         background-color: @color5; color: @color4; text-decoration: none; border-color: @color5;
                     }
@@ -228,20 +225,20 @@ Revolution slider
         margin: 7px 0 7px 15px; .raleway; font-size: 13px; position: relative;
         &:hover{
             .lang-item{
-                top:26px; display: block;opacity: 1; 
+                top:26px; display: block;opacity: 1;
             }
         }
-        .lang-title{ 
+        .lang-title{
             display: block; line-height: 24px; text-align: center; height: 26px; width: 100px; border: 1px solid @color3; color: @color2;.transition(all, 0.3s, ease);
             &:hover{
-                background-color: @color4; color: @color1; text-decoration: none; 
+                background-color: @color4; color: @color1; text-decoration: none;
             }
         }
         .lang-item{
             color: @color2;display: hidden; top: -1000px; position: absolute; z-index: 1000; opacity: 0;
             background-color: @color4; overflow: hidden; .transition(opacity, 0.3s, ease);
             a{
-                display: block; line-height: 24px; text-align: center;width: 100px; 
+                display: block; line-height: 24px; text-align: center;width: 100px;
                 &:hover{
                     background-color: @color2; color: @color1; text-decoration: none;
                 }
@@ -250,8 +247,8 @@ Revolution slider
     }
     .header-bg{height: 175px; background-color: @color6; .transition(height, 0.5s, ease );}
     .header-bg-fixed{height: 100px;}
-    .header-main { 
-        height: 175px; .transition(height, 0.5s, ease ); background-color: @color6; 
+    .header-main {
+        height: 175px; .transition(height, 0.5s, ease ); background-color: @color6;
 
         .top-search-form{
             form{
@@ -272,18 +269,18 @@ Revolution slider
     }
     #container-fixed{height: 75px; margin: 25px 0; .transition(margin, 0.5s, ease );}
     .header-logo { width:271px; height:75px; background:url("../img/logo-big-@{skin}.png") no-repeat; display:block; margin:0; }
-    .header-main-fixed { 
-        height: 100px; position: fixed; width: 100%; left: 0; top: 0; z-index: 999; background-color:@color6; 
+    .header-main-fixed {
+        height: 100px; position: fixed; width: 100%; left: 0; top: 0; z-index: 999; background-color:@color6;
         /*        .box-shadow( 0, 2px, 3px, 0.15);*/
         .navbar-main{
             background-color:#f7f7f7;
         }
         #container-fixed{
-            margin:0; 
+            margin:0;
         }
 
     }
-    .header-mini-cart { 
+    .header-mini-cart {
         position: relative; width:43px; height:30px;right:0; text-align:center;  background:url("../img/card.png") no-repeat bottom left;margin:10px 0 0 20px;
         a{
             text-decoration: none;display:block; height: 100%;outline: 0;text-shadow:none; padding-right:10px;
@@ -361,7 +358,7 @@ Revolution slider
         }
     }
     .dropdown-submenu:after{
-        content:"\f105"; 
+        content:"\f105";
         font-family: FontAwesome;
         font-style: normal;
         font-weight: normal;
@@ -440,7 +437,7 @@ Revolution slider
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-color: @color4; 
+    background-color: @color4;
     border: 1px solid #ddd;
     max-width: 280px;
     margin: 0 auto;
@@ -472,7 +469,7 @@ Revolution slider
 
 }
 .product-rating {
-    width:100%;padding:9px 0 3px; 
+    width:100%;padding:9px 0 3px;
     .stars{ unicode-bidi:bidi-override;direction:rtl;font-size:13px;text-align:center; }
     .stars span.star{font-family:FontAwesome;font-weight:normal;font-style:normal;display:inline-block }
     .stars span.star:hover{cursor:pointer}
@@ -502,7 +499,7 @@ Revolution slider
         position: absolute; opacity: 1; z-index: 2;
     }
 }
-.product-new, 
+.product-new,
 .product-sale
 {
     position: absolute;
@@ -608,17 +605,17 @@ Revolution slider
 }
 
 .bar:after, .bar:before{
-    content:''; 
-    position: absolute; 
-    bottom: 0; 
-    width: 50.2%; 
-    height: 0; 
-    border-bottom: 7px solid @color4; 
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
-    -ms-box-sizing: border-box; 
-    box-sizing: border-box; 
-    z-index: 10; 
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 50.2%;
+    height: 0;
+    border-bottom: 7px solid @color4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 10;
 }
 .bar:before{
     left: 0; border-right: 7px solid rgba(0, 0, 0, 0);
@@ -661,7 +658,7 @@ Revolution slider
     margin-top: -45px;
     z-index: 10;
     &:before{
-        content:"\f104"; 
+        content:"\f104";
         font-family: FontAwesome;
         font-style: normal;
         font-weight: normal;
@@ -801,7 +798,7 @@ Revolution slider
     .nav-pills > li.active, .nav-pills > li:hover {
         .header-bottom-line:after{
             opacity:1;
-        } 
+        }
     }
     .tab-pane{
         padding-top: 30px;
@@ -875,7 +872,7 @@ Revolution slider
     }
 }
 
-.block-toolbar { 
+.block-toolbar {
     width: 90px;
     margin: 20px auto 10px;
     a { display:inline-block; height:40px; width: 40px; line-height: 40px; padding:0 7px; border:1px @color3 solid; color:@color3 ; font-size:22px; text-decoration:none; text-align:center; vertical-align:top; }
@@ -936,14 +933,14 @@ Revolution slider
         .sub-category{
             display: none;  padding-left: 10px;
         }
-    } 
+    }
 }
 .block-side-products{
     border: 1px solid #ddd;
     border-top: none;
     margin-bottom: 40px;
     .price{
-        color: @color5; font-size: 16px; 
+        color: @color5; font-size: 16px;
     }
     .banner{
         margin: 0;
@@ -977,7 +974,7 @@ Revolution slider
         border-radius: 0;
     }
     .input-group{
-        margin-bottom: 10px;   
+        margin-bottom: 10px;
     }
 }
 .block-pagination{
@@ -991,11 +988,11 @@ Revolution slider
             background: @color1;
             border-color: @color1;
         }
-    } 
+    }
     ul > li > a:focus,
         ul > li > a:hover{
         border-color: @color5;
-        background: @color5; 
+        background: @color5;
         color: @color4;}
     ul > li > a{
         border: 1px solid @color3;
@@ -1008,14 +1005,14 @@ Revolution slider
             color:@color1;
             border-radius: 0;
             &:hover{color: @color4;}
-        } 
+        }
     }
     ul > li:last-child{
         a{
             color:@color1;
             border-radius: 0;
             &:hover{color: @color4;}
-        } 
+        }
     }
 }
 .block-order-total{
@@ -1051,10 +1048,8 @@ Revolution slider
         border-radius: 0; margin:10px 0;border-color: #ddd;
     }
     .btn-default-1{
-        border-color: @color5; background-color: @color4; color: @color1; margin:5px 20px 10px 0;display: inline-block;
-        &:hover{
-            border-color: @color5; background-color: @color5; color: @color4;  
-        }
+        margin: 5px 20px 10px 0;
+        display: inline-block;
     }
 }
 .box{
@@ -1079,7 +1074,7 @@ Revolution slider
         form{
             margin: 0;
             input{
-                border: 1px solid @color3; height: 30px; padding: 5px 10px; 
+                border: 1px solid @color3; height: 30px; padding: 5px 10px;
             }
             button{
                 border: 1px solid @color3; padding: 10px 30px; color: @color1;text-transform: uppercase; .transition(all, 0.3s, ease );  margin: 15px 0; background: none;
@@ -1102,7 +1097,7 @@ Revolution slider
         border-color: #ddd;
     }
     .label{
-        background-color: @color5; 
+        background-color: @color5;
     }
     .new{
         background-color: @color1;
@@ -1144,7 +1139,7 @@ Revolution slider
             display:inline-block;
             float: left;
             background-color: @color5;
-            width:45px; 
+            width:45px;
             margin: 5px;
             padding: 5px 10px 3px;
             text-align: center;
@@ -1312,7 +1307,7 @@ Revolution slider
     background-size:cover;
 
     background-position:center center;
-    background-attachment:fixed;   
+    background-attachment:fixed;
 }
 #clients-say {
     background-image: url("../img/bg/bg2.jpg");
@@ -1337,21 +1332,21 @@ Revolution slider
     background-color: rgba(255,255,255,0.7);
 }
 
-.footer-information { 
-    padding: 40px 0;background:@color1;  font-size: 13px; 
+.footer-information {
+    padding: 40px 0;background:@color1;  font-size: 13px;
     p{
         color:@color2;
     }
 
-    a { 
+    a {
         color: @color2; text-decoration: none; line-height: 20px;
         &:hover{
-            color: @color5;   
+            color: @color5;
         }
     }
 
-    .footer-categories { 
-        margin: 0; list-style-type: none; 
+    .footer-categories {
+        margin: 0; list-style-type: none;
         li { list-style-type: none; line-height: 28px; }
     }
 
@@ -1391,13 +1386,13 @@ Revolution slider
         }
     }
 }
-.footer-copy { 
+.footer-copy {
     padding: 25px 0;
     a{color: @color3;}
     .logo-copy { display: inline-block; width: 53px; height: 50px; background: url("../img/logo-copy-@{skin}.png") no-repeat; margin-right: 10px; }
     p { display: inline-block; height: 42px; line-height: 16px; border-left: 1px @color1 solid; padding: 10px 0 0 10px; margin: 0; font-size: 12px; color: #ccc; }
 }
-.footer-payments { list-style:none; padding:10px 14px 0 0; 
+.footer-payments { list-style:none; padding:10px 14px 0 0;
                    li { display:inline-block; margin:0 4px 8px; float:inherit; }
 }
 
@@ -1423,11 +1418,11 @@ Header block of secondary pages
 }
 .breadcrumb > li:after {
     margin-left:10px;
-    content:"\f105"; 
+    content:"\f105";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
-    text-decoration: inherit; 
+    text-decoration: inherit;
     font-size: 12px;
     color: @color1;
 }
@@ -1594,7 +1589,7 @@ Page Product detail
         width: 120px; font-weight: 400; color: @color1;
     }
     .form-control{
-        display: inline-block; width: 120px;    
+        display: inline-block; width: 120px;
     }
 }
 /* ==========================================================================
@@ -1644,7 +1639,7 @@ Page Shopping cart
         }
     }
     th {
-        display: none;    
+        display: none;
     }
 
     td {
@@ -1696,13 +1691,13 @@ Page Shopping cart
 .cart-table {
 
     th, td {
-        @media (min-width: 680px) { 
+        @media (min-width: 680px) {
             padding: 1em !important;
 
         }
     }
     th, td {
-        @media (max-width: 680px) { 
+        @media (max-width: 680px) {
             text-align:left;
 
         }
@@ -1723,7 +1718,7 @@ Page blog
         margin-bottom: 40px;
     }
     .blog{
-        background-color: @color4; 
+        background-color: @color4;
         border: 1px solid #ddd;
         max-width: 100%;
         margin: 0 auto;
@@ -1748,13 +1743,13 @@ Page blog
         .blog-name{
             color: @color1;
             &:hover{
-                color: @color5; text-decoration: none;  
+                color: @color5; text-decoration: none;
             }
         }
         .blog-link{
             color: @color1;
             &:hover{
-                color: @color5; text-decoration: none;  
+                color: @color5; text-decoration: none;
             }
         }
 
@@ -1878,7 +1873,7 @@ blockquote{
 .accordion{
 
     .accordion-heading{
-        border: 1px solid #ccc; padding:0 10px;  margin-bottom: 5px;  
+        border: 1px solid #ccc; padding:0 10px;  margin-bottom: 5px;
     }
     a.accordion-toggle{color: @color1; font-weight: 500;font-size: 16px; height: 40px;line-height: 40px;position:relative;vertical-align:middle; text-decoration: none;
 

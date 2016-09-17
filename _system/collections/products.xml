@@ -9,11 +9,11 @@
             <field name="price" type="text" label="Preis" filter="string" class="form-control" admintable="true" />
             <field name="sku" type="text" label="SKU" filter="string" class="form-control" />
             <field name="brand" type="text" label="Marke/Hersteller" filter="string" class="form-control" admintable="true" />
-            <!--field name="id" type="uuid" uuid="ai" filter="integer" /-->
+            <field name="id" type="uuid" uuid="ai" filter="integer" />
         </fieldset>
 
         <fieldset name="gallery" title="Fotos">
-            <!--field name="gallery" type="gallery" filter="array" label="Gallery" id="id" path="_media/products" /-->
+            <field name="gallery" type="gallery" filter="array" label="Gallery" idfield="id" path="_media/products" />
         </fieldset>
 
         <fieldset name="sizes" title="Größen">

@@ -9,7 +9,7 @@
             <field name="price" type="text" label="Preis" filter="string" class="form-control" admintable="true" />
             <field name="sku" type="text" label="SKU" filter="string" class="form-control" />
             <field name="brand" type="text" label="Marke/Hersteller" filter="string" class="form-control" admintable="true" />
-            <field name="id" type="uuid" uuid="ai" filter="integer" />
+            <field name="id" type="uuid" uuid="ai" filter="integer" admintable="true" />
         </fieldset>
 
         <fieldset name="gallery" title="Fotos">

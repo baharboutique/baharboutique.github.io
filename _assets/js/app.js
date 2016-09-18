@@ -11,12 +11,12 @@
 //= require vendor/jquery.themepunch.plugins.min.js
 //= require vendor/jquery.themepunch.revolution.min.js
 //= require jquery.scrollTo
+//= require jquery-gcse
 
 //= require ./main.js
 //= require ./cart.js
-
-//= require jquery-gcse
-$('#search_results').gcse({cseKey:'016467579056543974583:cdq6cs7vycy'});
-
 //= require ./mailchimp.js
+
+// initiate plugins
 $("#mailchimp_form").mailchimpForm();
+$('#search_results').gcse({cseKey:'016467579056543974583:cdq6cs7vycy'});

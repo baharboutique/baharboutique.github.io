@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 gem 'jekyll', ">= 3.0"
 gem 'html-proofer'
-gem 'jekyll-sitemap'
 gem 'mini_magick'
 gem 'therubyracer'
 gem 'uglifier'
@@ -11,4 +10,5 @@ group :jekyll_plugins do
   gem 'jekyll-assets'
   gem 'autoprefixer-rails'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
 end

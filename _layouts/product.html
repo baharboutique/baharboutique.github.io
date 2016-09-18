@@ -27,7 +27,7 @@ layout: default
                     {% capture img_md %}{% include img_path src=img width="400" height="" %}{% endcapture %}
                     {% capture img_sm %}{% include img_path src=img width="62" height="" %}{% endcapture %}
                     <a href="javascript:;" data-image="{{ img_md }}" data-zoom-image="{{ img_lg }}">
-                      <img id="img_{{ forloop.index }}" src="{{ img_sm }}" alt="{{ item.title }}">
+                      <img id="img_{{ forloop.index }}" src="{{ img_sm }}" alt="{{ item.title | default: page.title }}">
                     </a>
                     {% endfor %}
                   </div>
@@ -99,3 +99,23 @@ layout: default
     </div>
   </div>
 </section>
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="cartModalLabel">Warenkorb</h4>
+      </div>
+      <div class="modal-body">
+        <div class="simpleCart_items"></div>
+        <hr>
+        <p class="lead">Zwischensumme (<span class="simpleCart_quantity"></span> Artikel): <span class="simpleCart_total"></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
+        <a href="/cart" class="btn btn-primary">Zur Kasse</a>
+      </div>
+    </div>
+  </div>
+</div>

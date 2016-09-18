@@ -4,7 +4,7 @@ simpleCart({
         type: "PayPal",
         email: "info@baharboutique.de"
     },
-    
+
     currency: "EUR",
     cartColumns: [
         { view: function(item, column){
@@ -13,8 +13,8 @@ simpleCart({
         } ,
         { view: function(item, column){
             return  '<p><a href="' + item.get('url') + '" class="h4">' + item.get('name') + '</a><br>' +
-                    (item.get('brand') ? 'Hersteller: ' + item.get('brand') + '<br>' : '') + 
-                    (item.get('size') ? 'Größe: ' + item.get('size') + '<br>' : '') + 
+                    (item.get('brand') ? 'Hersteller: ' + item.get('brand') + '<br>' : '') +
+                    (item.get('size') ? 'Größe: ' + item.get('size') + '<br>' : '') +
                     '</p>' +
                     '<a href="javascript:;" class="simpleCart_remove">Entfernen</a>';
           }, attr: "product", label: "Produkt"} ,
@@ -30,16 +30,18 @@ simpleCart({
 //simpleCart.currency().decimal = ',';
 //simpleCart.currency().delimiter = '.';
 simpleCart.bind( "afterAdd" , function( item ) {
-    toastr.success( item.get("name") + (item.get("params") ? " - " + item.get("params") : '') + " - " + item.get("size") + " was added to the basket." );
-    
+    //toastr.success( item.get("name") + (item.get("params") ? " - " + item.get("params") : '') + " - " + item.get("size") + " was added to the basket." );
+    $('#cartModal').modal('show');
+    /*
     setTimeout(function() {
         var quantity = simpleCart.quantity();
-        toastr.info( 
+        toastr.info(
             "Your new sub-total is " + simpleCart.toCurrency( simpleCart.total(), {decimal: ',', delimiter: '.'} ) + " (" + quantity + " item" + (quantity !== 1 ? "s" : "") + "). &nbsp; " +
             "<a class='btn btn-primary' href='" + $('a.navbar-cart').attr('href') + "'>" +
             "<span class='fa fa-shopping-cart'></span> View basket</a>"
         );
     }, 1000);
+    */
 });
 simpleCart.bind( "update", function(e) {
     $el = $('.navbar-cart');

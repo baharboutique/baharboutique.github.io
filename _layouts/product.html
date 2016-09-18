@@ -11,19 +11,25 @@ layout: default
               <div class="hidden">
                 <span class="item_price">&euro;{{ page.price | replace: ',', '.' }}</span>
                 <span class="item_url">{{ site.url }}{{ page.url }}</span>
-                {% include img src=page.image1 width="90" class="item_thumb" title=page.title %}
+                {% assign img = page.gallery[0].src | remove_first: '_media/' %}
+                {% include img src=img width="90" class="item_thumb" title=page.title %}
               </div>
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="product-image">
-                  {% capture img_sm %}{% include img_path src=page.image1 width="62" height="" %}{% endcapture %}
-                  {% capture img_md %}{% include img_path src=page.image1 width="400" height="" %}{% endcapture %}
-                  {% capture img_lg %}{% include img_path src=page.image1 width="800" height="" %}{% endcapture %}
+                  {% capture img_lg %}{% include img_path src=img width="800" height="" %}{% endcapture %}
+                  {% capture img_md %}{% include img_path src=img width="400" height="" %}{% endcapture %}
+                  {% capture img_sm %}{% include img_path src=img width="62" height="" %}{% endcapture %}
                   <img id="product-zoom"  src='{{ img_md }}' data-zoom-image="{{ img_lg }}" alt="{{ page.title }}">
                   <div id="gal1">
-
+                    {% for item in page.gallery %}
+                    {% assign img = item.src | remove_first: '_media/' %}
+                    {% capture img_lg %}{% include img_path src=img width="800" height="" %}{% endcapture %}
+                    {% capture img_md %}{% include img_path src=img width="400" height="" %}{% endcapture %}
+                    {% capture img_sm %}{% include img_path src=img width="62" height="" %}{% endcapture %}
                     <a href="javascript:;" data-image="{{ img_md }}" data-zoom-image="{{ img_lg }}">
-                      <img id="img_01" src="{{ img_sm }}" alt="{{ page.title }}">
+                      <img id="img_{{ forloop.index }}" src="{{ img_sm }}" alt="{{ item.title }}">
                     </a>
+                    {% endfor %}
                   </div>
                 </div>
               </div>

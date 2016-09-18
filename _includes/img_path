@@ -1,4 +1,4 @@
-{% if include.src %}{% capture img %}
+{% if assets[include.src] %}{% capture img_path %}
 {% capture gravity %}{% if include.gravity %}{{ include.gravity }}{% else %}center{% endif %}{% endcapture %}
 {% img '{{ include.src | remove_first: "_media/" }}' magick:resize:'{{ include.width }}^x{{ include.height }}' magick:gravity:'{{ gravity }}' magick:crop:'{{ include.width }}x{{ include.height }}+0+0' %}
-{% endcapture %}{% assign img_path = img | split: '"' %}{{ img_path[1] }}{% endif %}
+{% endcapture %}{% assign img_path = img_path | split: '"' %}{{ img_path[1] }}{% endif %}

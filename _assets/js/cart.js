@@ -1,10 +1,11 @@
 //= require simplecart-js/simpleCart.js
 simpleCart({
-    checkout: {
+    
+  checkout: {
         type: "PayPal",
         email: "info@baharboutique.de"
     },
-
+    
     currency: "EUR",
     cartColumns: [
         { view: function(item, column){
@@ -27,6 +28,10 @@ simpleCart({
         }
     ]
 });
+simpleCart({
+     shippingFlatRate: 5
+});
+
 //simpleCart.currency().decimal = ',';
 //simpleCart.currency().delimiter = '.';
 simpleCart.bind( "afterAdd" , function( item ) {

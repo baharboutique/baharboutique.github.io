@@ -3,6 +3,7 @@
     <fields>
         <fieldset name="options">
             <field name="category" type="itemlist" label="Kategorie" filter="string" class="form-control" admintable="true" required="true" app="categories"/>
+            <field name="old_price" type="text" label="Alter Preis" filter="string" class="form-control"/>
             <field name="price" type="text" label="Preis" filter="string" class="form-control" admintable="true" />
             <field name="sku" type="text" label="SKU" filter="string" class="form-control" />
             <field name="brand" type="text" label="Marke/Hersteller" filter="string" class="form-control" admintable="true" />

@@ -26,7 +26,7 @@ layout: default
                 </figure>
                 <div class="product-caption">
                   <a href="{{ item.url }}" class="product-name">{{ item.title }}</a>
-                  <p class="product-price">&euro;{{ item.price }} zzgl. Versand</p>
+                  <p class="product-price">{% if item.old_price %}<span>&euro;{{ item.old_price }}</span>{% endif %} &euro;{{ item.price }} zzgl. Versand</p>
                 </div>
               </div>
             </article>

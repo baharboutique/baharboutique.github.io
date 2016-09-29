@@ -26,7 +26,7 @@
             </figure>
             <div class="product-caption">
               <a href="#" class="product-name">{{ product.title }}</a>
-              <p class="product-price">&euro;{{ product.price }} zzgl. Versand</p>
+              <p class="product-price">{% if product.old_price %}<span>&euro;{{ product.old_price }}</span>{% endif %} &euro;{{ product.price }} zzgl. Versand</p>
               <div class="product-rating">
                 <div class="stars">
                   <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>

@@ -15,6 +15,7 @@
           <div class="product">
             <figure class="figure-hover-overlay">
               <a href="{{ product.url }}" class="figure-href"></a>
+              <div class="product-sale">Rabatt</div>
               {% assign img = product.gallery[0].src | remove_first: '_media/' %}
               {% include img src=img width="400" height="750" title=product.title class='img-responsive' %}
               <span class="bar"></span>

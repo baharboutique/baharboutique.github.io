@@ -41,6 +41,7 @@ layout: default
                   </div>
                 </div>
                 <div class="product-information">
+                  {{ content }}
                   {% if page.brand %}
                   <div class="clearfix">
                     <label class="pull-left">Hersteller:</label> <span class="item_brand">{{ page.brand }}</span>
@@ -86,11 +87,8 @@ layout: default
           <div class="box-border block-form">
             <!-- Tab panes -->
             <div class="tab-content">
-              <div class="tab-pane active" id="description">
-                <br>
-                <h3>Produktbeschreibung</h3>
-                <hr>
-                {{ content }}
+              <div class="tab-pane active" id="review">
+                {% include disqus.html %}
               </div>
             </div>
           </div>

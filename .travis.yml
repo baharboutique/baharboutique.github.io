@@ -16,6 +16,7 @@ before_install:
 - #gem install travis_dedup && travis-dedup $TRAVIS_REPO_SLUG $TRAVIS_ACCESS_TOKEN --branches
 - nvm install 4
 - npm install -g bower
+- if [[ $(git show --name-only) == *_assets/less* ]]; then echo "LESS changed. Clearing cache..."; rm -rf .asset-cache/sprockets; fi
 
 script:
 - set -e

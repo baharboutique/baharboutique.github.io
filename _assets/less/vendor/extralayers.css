@@ -834,6 +834,19 @@
     line-height:100px;
     font-weight:700;
     font-family:"Raleway";
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    background-color:transparent;
+    text-shadow:none;
+    border-width:0px;
+    border-color:rgb(0, 0, 0);
+    border-style:none;
+}
+.tp-caption.active_heavy_dark_100 {
+    font-size:100px;
+    line-height:100px;
+    font-weight:700;
+    font-family:"Raleway";
     color:#25211e;
     text-decoration:none;
     background-color:transparent;

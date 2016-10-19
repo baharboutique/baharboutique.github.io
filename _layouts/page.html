@@ -12,8 +12,9 @@ layout: default
       </div>
       <div class="row">
         {% if page.image %}
+        {% assign img = page.image | remove_first: '_media/' %}
         <div class="col-md-4">
-            <p> {% include img src=page.image width="250" title=page.title %} </p>
+            <p> {% include img src=img width="250" title=page.title %} </p>
         </div>
         <div class="col-md-8">
           {{ content }}

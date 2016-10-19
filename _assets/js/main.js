@@ -157,6 +157,7 @@ jQuery(document).ready(function ($) {
                 drag_block_vertical: false,
                 parallax: "mouse",
                 parallaxBgFreeze: "on",
+                disable_onmobile: "on",
                 parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
                 keyboardNavigation: "off",
                 navigationHAlign: "center",
@@ -181,16 +182,18 @@ jQuery(document).ready(function ($) {
                 shuffle: "off",
                 autoHeight: "off",
                 forceFullWidth: "off",
-                hideThumbsOnMobile: "off",
+                hideThumbsOnMobile: "on",
                 hideNavDelayOnMobile: 1500,
                 hideBulletsOnMobile: "off",
-                hideArrowsOnMobile: "off",
+                hideArrowsOnMobile: "on",
                 hideThumbsUnderResolution: 0,
                 hideSliderAtLimit: 0,
                 hideCaptionAtLimit: 0,
                 hideAllCaptionAtLilmit: 0,
                 startWithSlide: 0,
-                fullScreenOffsetContainer: ""
+                fullScreenOffsetContainer: "",
+                responsiveLevels: [2048,1024,778,480],
+                panZoomDisableOnMobile: "on"
             });
 
 

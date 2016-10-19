@@ -72,11 +72,9 @@ profiles:
         - pinterest
     facebook: 'https://www.facebook.com/baharboutiquetesettuer'
     twitter: 'https://twitter.com/Bahar_Boutique'
-    google: 'https://plus.google.com/105140503278343271378'
+    google: 'https://plus.google.com/+BaharBoutiqueTesettürBremen'
     pinterest: 'https://de.pinterest.com/baharboutiquete/'
-analytics:
-    provider: google_analytics
-    tracking_id: UA-77304209-1
+
 comments:
     provider: '1'
 

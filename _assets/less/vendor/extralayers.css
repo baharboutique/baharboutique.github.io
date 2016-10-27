@@ -842,12 +842,12 @@
     border-color:rgb(0, 0, 0);
     border-style:none;
 }
-.tp-caption.active_heavy_dark_100 {
+.tp-caption.active_heavy_light_100 {
     font-size:100px;
     line-height:100px;
     font-weight:700;
     font-family:"Raleway";
-    color:#25211e;
+    color:rgb(255, 255, 255);
     text-decoration:none;
     background-color:transparent;
     text-shadow:none;

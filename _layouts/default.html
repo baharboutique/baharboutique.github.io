@@ -81,12 +81,12 @@
               </div>
               <div id="navbar-collapse-1" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                  {% for item in site.categories %}
+                  {% for item in site.categories | where: 'published', 1 %}
                   <li><a href="{{ item.url }}">{{ item.title }}</a></li>
                    {% endfor %}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  {% for item in site.pages %}{% unless item.slug == "index" %}{% unless item.parent %}{% unless item.menu == false %}
+                  {% for item in site.pages | where: 'published', 1 %}{% unless item.slug == "index" %}{% unless item.parent %}{% unless item.menu == false %}
                   {% assign submenu = (site.pages | where: 'published', 1 | where: 'parent', item.slug | sort: 'order') %}
                   {% assign submenusize = submenu | size %}
                   {% if submenusize > 0 %}

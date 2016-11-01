@@ -251,14 +251,10 @@ Revolution slider
         height: 175px; .transition(height, 0.5s, ease ); background-color: @color6;
 
         .top-search-form{
-        
-             
             form{
-              
-                
+                margin: 0;
                 input{
                     border: 1px solid @color3; height: 30px; padding: 5px 10px; width: 250px;
-            
                 }
                 button{
                     margin-left:-5px;border: 1px solid @color3;  height: 30px; width: 30px; background-color: @color4; color: @color1; .transition(all, 0.3s, ease );
@@ -271,8 +267,8 @@ Revolution slider
         }
 
     }
-    #container-fixed{height: 75px; margin: 25px; .transition(margin, 0.5s, ease );}
-    .header-logo { width:271px; height:75px; background:url("../img/logo-big-@{skin}.png") no-repeat; display:block; margin:10; }
+    #container-fixed{height: 75px; margin: 25px 0; .transition(margin, 0.5s, ease );}
+    .header-logo { width:271px; height:75px; background:url("../img/logo-big-@{skin}.png") no-repeat; display:block; margin:0; }
     .header-main-fixed {
         height: 100px; position: fixed; width: 100%; left: 0; top: 0; z-index: 999; background-color:@color6;
         /*        .box-shadow( 0, 2px, 3px, 0.15);*/
@@ -631,9 +627,6 @@ Revolution slider
 /*============================== / product section ===========================*/
 
 /*============================== top-slider ===========================*/
-
-
-
 #top-slider{
     li{
         position: relative;
@@ -644,8 +637,10 @@ Revolution slider
             padding:16px;
             color: @color1;
             z-index: 50;
+            bottom: 0;
             font-size: 18px;
-            margin: 20px;
+            width: 100%;
+            margin: 0;
             .raleway;
         }
     }
@@ -668,7 +663,7 @@ Revolution slider
         font-style: normal;
         font-weight: normal;
         text-decoration: inherit;
-        font-size: 22px;
+        font-size: 50px;
         padding-left: 15px;
         position: absolute;
         top: 3px;
@@ -681,8 +676,8 @@ Revolution slider
 }
 
 .rslides_nav:hover {
-    background-color: @color2;
-    border: 1px solid @color2;
+    background-color: @color5;
+    border: 1px solid @color5;
     text-decoration: none;
     &:before{
         color: @color4;
@@ -706,7 +701,7 @@ Revolution slider
    ========================================================================== */
 .header-menu{
     position: relative;
-    margin: 20px 50px 10px;
+    margin: 20px 0 10px;
     border: 1px solid @color3;
     h5{
         text-align: center;

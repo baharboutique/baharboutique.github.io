@@ -236,6 +236,7 @@ jQuery(document).ready(function ($) {
             timeout: 3000,
             auto: true,
             nav: true,
+            height : 100,
             prevText: "",
             nextText: ""
         });

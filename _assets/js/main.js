@@ -180,7 +180,7 @@ jQuery(document).ready(function ($) {
                 stopAfterLoops: -1,
                 stopAtSlide: -1,
                 shuffle: "off",
-                autoHeight: "on",
+                autoHeight: "off",
                 forceFullWidth: "off",
                 hideThumbsOnMobile: "on",
                 hideNavDelayOnMobile: 1500,

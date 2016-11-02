@@ -180,7 +180,7 @@ jQuery(document).ready(function ($) {
                 stopAfterLoops: -1,
                 stopAtSlide: -1,
                 shuffle: "off",
-                autoHeight: "off",
+                autoHeight: "on",
                 forceFullWidth: "off",
                 hideThumbsOnMobile: "on",
                 hideNavDelayOnMobile: 1500,
@@ -193,7 +193,8 @@ jQuery(document).ready(function ($) {
                 startWithSlide: 0,
                 fullScreenOffsetContainer: "",
                 responsiveLevels: [2048,1024,778,480],
-                panZoomDisableOnMobile: "on"
+                panZoomDisableOnMobile: "on",
+                gridheight: 250
             });
 
 

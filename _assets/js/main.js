@@ -140,7 +140,8 @@ jQuery(document).ready(function ($) {
             {
                 dottedOverlay: "none",
                 delay: 16000,
-              
+                startwidth: 1920,
+                startheight: 800,
                 hideThumbs: 200,
                 thumbWidth: 100,
                 thumbHeight: 50,
@@ -192,8 +193,7 @@ jQuery(document).ready(function ($) {
                 startWithSlide: 0,
                 fullScreenOffsetContainer: "",
                 responsiveLevels: [2048,1024,778,480],
-                panZoomDisableOnMobile: "on",
-                gridheight: 250
+                panZoomDisableOnMobile: "on"
             });
 
 

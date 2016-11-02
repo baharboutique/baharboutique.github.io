@@ -28,17 +28,17 @@ website:   	http://www.themepunch.com
 **********************************************/
 
 .tp-banner-container {
-    width: 80%;
+    width: 100%;
     position: relative;
     padding: 0;
     overflow: hidden;
 }
 .tp-banner {
-    width: 80%;
+    width: 100%;
     position: relative;
 }
 .tp-banner-fullscreen-container {
-    width: 80%;
+    width: 100%;
     position: relative;
     padding: 0;
 }

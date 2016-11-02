@@ -28,7 +28,8 @@ website:   	http://www.themepunch.com
 **********************************************/
 
 .tp-banner-container {
-    width: 100%;
+    width: 80%;
+    height: 50%;
     position: relative;
     padding: 0;
     overflow: hidden;

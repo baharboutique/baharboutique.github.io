@@ -208,17 +208,7 @@ jQuery(document).ready(function ($) {
 							startwidth:1920,
 							startheight:300, //responsiveLevels seems to be a container
 							hideThumbs:10,
-              spinner: off,
-              navigationType: "none",
-              navigationArrows: "solo",
-              soloArrowLeftHalign: "left",
-              soloArrowLeftValign: "center",
-              soloArrowLeftHOffset: 20,
-              soloArrowLeftVOffset: 0,
-              soloArrowRightHalign: "right",
-              soloArrowRightValign: "center",
-              soloArrowRightHOffset: 20,
-              soloArrowRightVOffset: 0,
+             
               responsiveLevels: [2048,1024,778,480]
                
             });

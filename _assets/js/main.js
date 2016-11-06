@@ -205,9 +205,10 @@ jQuery(document).ready(function ($) {
   jQuery('.tp-banner').show().revolution(
             {
              delay:9000,
-							startwidth:1170,
-							startheight:200,
-							hideThumbs:10
+							startwidth:1920,
+							startheight:250,
+							hideThumbs:10,
+              responsiveLevels: [2048,1024,778,480]
                
             });
 

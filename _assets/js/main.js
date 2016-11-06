@@ -181,7 +181,7 @@ jQuery(document).ready(function ($) {
                 stopAfterLoops: -1,
                 stopAtSlide: -1,
                 shuffle: "off",
-                autoHeight: "off",
+                autoHeight: "on",
                 forceFullWidth: "off",
 /**----->*/     forceFullHeight: "off",
                 hideThumbsOnMobile: "on",

@@ -1074,7 +1074,7 @@ img.tp-slider-alternative-image {
         transition: none;
     }
 }
-@media only screen and (min-width: 0) and (max-width: 479px) {
+@media only screen and (min-width: 0) and (max-width: 200px) {
     .tp-simpleresponsive .button {
         padding: 2px 5px 2px;
         line-height: 20px !important;
@@ -1783,16 +1783,7 @@ img.tp-slider-alternative-image {
 /***************************************
         -	RESPONSIVE SETTINGS 	-
 ****************************************/
-/**
-@media only screen and (min-width: 0) and (max-width: 479px) {
-    .responsive .tp-bullets {
-        display: none
-    }
-    .responsive .tparrows {
-        display: none
-    }
-}
-*/
+
 @media only screen and (min-width: 0) and (max-width: 200px) {
     .responsive .tp-bullets {
         display: none
@@ -1941,7 +1932,7 @@ img.tp-slider-alternative-image {
         font-size: 20px
     }
 }
-@media only screen and (min-width: 0) and (max-width: 479px) {
+@media only screen and (min-width: 0) and (max-width: 200px) {
     .tparrows.preview1,
     .tparrows.preview1:after {
         width: 40px;
@@ -2161,7 +2152,7 @@ img.tp-slider-alternative-image {
         visibility: hidden
     }
 }
-@media only screen and (min-width: 0) and (max-width: 479px) {
+@media only screen and (min-width: 0) and (max-width: 200px) {
     .tparrows.preview2 {
         min-width: 30px;
         min-height: 30px;

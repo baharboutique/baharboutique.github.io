@@ -195,7 +195,8 @@ jQuery(document).ready(function ($) {
                 startWithSlide: 0,
                 fullScreenOffsetContainer: "",
                 responsiveLevels: [2048,1024,778,480],
-                panZoomDisableOnMobile: "on"
+                panZoomDisableOnMobile: "on",
+              gridheight: 200 
 });
 
     // Top login open functions

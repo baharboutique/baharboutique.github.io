@@ -206,7 +206,7 @@ jQuery(document).ready(function ($) {
             {
              delay:9000,
 							startwidth:1920,
-						//	startheight:300, responsiveLevels sets the height
+							startheight:300, //responsiveLevels seems to be a container
 							hideThumbs:10,
               spinner: off,
               navigationType: "none",

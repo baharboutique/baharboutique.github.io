@@ -141,7 +141,7 @@ jQuery(document).ready(function ($) {
                 dottedOverlay: "none",
                 delay: 16000,
                 startwidth: 1920,
-                startheight: 800,
+                startheight: 200,
                 hideThumbs: 200,
                 thumbWidth: 100,
                 thumbHeight: 50,
@@ -157,6 +157,7 @@ jQuery(document).ready(function ($) {
                 drag_block_vertical: false,
                 parallax: "mouse",
                 parallaxBgFreeze: "on",
+                disable_onmobile: "on",
                 parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
                 keyboardNavigation: "off",
                 navigationHAlign: "center",
@@ -173,6 +174,7 @@ jQuery(document).ready(function ($) {
                 soloArrowRightVOffset: 0,
                 shadow: 0,
                 fullWidth: "off",
+/**----->*/     forceHeight: "off",
                 fullScreen: "on",
                 spinner: "spinner1",
                 stopLoop: "off",
@@ -181,18 +183,20 @@ jQuery(document).ready(function ($) {
                 shuffle: "off",
                 autoHeight: "off",
                 forceFullWidth: "off",
-                hideThumbsOnMobile: "off",
+/**----->*/     forceFullHeight: "off",
+                hideThumbsOnMobile: "on",
                 hideNavDelayOnMobile: 1500,
                 hideBulletsOnMobile: "off",
-                hideArrowsOnMobile: "off",
+                hideArrowsOnMobile: "on",
                 hideThumbsUnderResolution: 0,
                 hideSliderAtLimit: 0,
                 hideCaptionAtLimit: 0,
                 hideAllCaptionAtLilmit: 0,
                 startWithSlide: 0,
-                fullScreenOffsetContainer: ""
-            });
-
+                fullScreenOffsetContainer: "",
+                responsiveLevels: [2048,1024,778,480],
+                panZoomDisableOnMobile: "on"
+});
 
     // Top login open functions
     $("#header-login").click(function () {

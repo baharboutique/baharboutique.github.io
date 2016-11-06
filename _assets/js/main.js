@@ -206,8 +206,10 @@ jQuery(document).ready(function ($) {
             {
              delay:9000,
 							startwidth:1920,
-							startheight:100,
+							startheight:300,
 							hideThumbs:10,
+              navigationType: "none",
+              navigationArrows: "solo",
               responsiveLevels: [2048,1024,778,480]
                
             });

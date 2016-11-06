@@ -206,7 +206,7 @@ jQuery(document).ready(function ($) {
             {
              delay:9000,
 							startwidth:1920,
-							startheight:250,
+							startheight:100,
 							hideThumbs:10,
               responsiveLevels: [2048,1024,778,480]
                

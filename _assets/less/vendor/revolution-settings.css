@@ -1783,8 +1783,17 @@ img.tp-slider-alternative-image {
 /***************************************
         -	RESPONSIVE SETTINGS 	-
 ****************************************/
-
+/**
 @media only screen and (min-width: 0) and (max-width: 479px) {
+    .responsive .tp-bullets {
+        display: none
+    }
+    .responsive .tparrows {
+        display: none
+    }
+}
+*/
+@media only screen and (min-width: 0) and (max-width: 200px) {
     .responsive .tp-bullets {
         display: none
     }

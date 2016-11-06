@@ -136,7 +136,10 @@ jQuery(document).ready(function ($) {
 //        touchenabled: "on"
 //
 //    });
-    jQuery('.tp-banner').show().revolution(
+   
+  
+  /**
+  jQuery('.tp-banner').show().revolution(
             {
                 dottedOverlay: "none",
                 delay: 16000,
@@ -194,6 +197,18 @@ jQuery(document).ready(function ($) {
                 fullScreenOffsetContainer: "",
                 responsiveLevels: [2048,1024,778,480],
                 panZoomDisableOnMobile: "on"
+            });
+            
+            */
+  
+  
+  jQuery('.tp-banner').show().revolution(
+            {
+             delay:9000,
+							startwidth:1170,
+							startheight:200,
+							hideThumbs:10
+               
             });
 
     // Top login open functions

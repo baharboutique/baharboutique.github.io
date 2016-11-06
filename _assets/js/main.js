@@ -176,6 +176,7 @@ jQuery(document).ready(function ($) {
                 fullWidth: "off",
 /**----->*/     forceHeight: "off",
                 fullScreen: "on",
+              fullscreenoffset:10,
                 spinner: "spinner1",
                 stopLoop: "off",
                 stopAfterLoops: -1,

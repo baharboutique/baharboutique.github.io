@@ -48,7 +48,7 @@ collections:
         output: true
         permalink: ':path.html'
 mediaurl: _media
-baseurl: /
+baseurl: 
 exclude:
     - vendor
     - Gemfile

@@ -43,10 +43,10 @@ defaults:
 collections:
     products:
         output: true
-        permalink: '/:path.html'
+        permalink: ':path.html'
     categories:
         output: true
-        permalink: '/:path.html'
+        permalink: ':path.html'
 mediaurl: _media
 baseurl: /
 exclude:

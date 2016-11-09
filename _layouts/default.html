@@ -82,7 +82,7 @@
               <div id="navbar-collapse-1" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                   {% for item in site.categories | where: 'published', 1 %}
-                  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                  <li><a href="{{ item.url }}">{{ item.menutitle }}</a></li>
                    {% endfor %}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

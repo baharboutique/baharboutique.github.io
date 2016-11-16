@@ -211,8 +211,8 @@ jQuery(document).ready(function ($) {
 							hideThumbs:10,
              
               navigationType: "none",
-            
-               navigationArrows: "solo",
+              navigationArrows: "solo",
+							navigationStyle: "round",
               soloArrowLeftHalign: "left",
               soloArrowLeftValign: "center",
               soloArrowLeftHOffset: 20,

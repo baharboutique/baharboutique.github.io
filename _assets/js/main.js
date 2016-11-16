@@ -212,7 +212,7 @@ jQuery(document).ready(function ($) {
              
               navigationType: "none",
               navigationArrows: "solo",
-							navigationStyle: "round",
+							navigationStyle: "preview1",
               soloArrowLeftHalign: "left",
               soloArrowLeftValign: "center",
               soloArrowLeftHOffset: 20,

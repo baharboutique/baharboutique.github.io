@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
                     headerfixed.removeClass("header-main-fixed");
                     headerfixedbg.removeClass("header-bg-fixed");
 
-                    headerfixed.addClass("header-main-fixed")
+                    //headerfixed.addClass("header-main-fixed")
                 }
        //     }
             //Updates scroll position

@@ -3,7 +3,7 @@
 jQuery(document).ready(function ($) {
     "use strict";
 
-/**    $(function () {
+    $(function () {
         //Keep track of last scroll
         var lastScroll = 0;
         var headerfixed = $("#header-main-fixed");
@@ -38,7 +38,7 @@ jQuery(document).ready(function ($) {
             lastScroll = st;
         });
     });
-		*/
+		
 
     $(function () {
         $('.dropdown').hover(function () {

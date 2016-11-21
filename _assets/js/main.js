@@ -16,11 +16,11 @@ jQuery(document).ready(function ($) {
 
                 //Replace this with your function call for downward-scrolling
                 if (st > 50) {
-                    var $obj = $(".header-top-login");
-                    if ($obj.hasClass("expanded")) {
-                        $obj.removeClass("expanded");
-                        $obj.slideUp("fast");
-                    }
+                   var $obj = $(".header-top-login");
+                   // if ($obj.hasClass("expanded")) {
+                   //     $obj.removeClass("expanded");
+                   //     $obj.slideUp("fast");
+                  //  }
                     headerfixedbg.addClass("header-bg-fixed");
                     headerfixed.addClass("header-main-fixed");
                 }

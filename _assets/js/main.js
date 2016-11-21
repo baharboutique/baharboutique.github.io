@@ -16,6 +16,41 @@ jQuery(document).ready(function ($) {
 
                 //Replace this with your function call for downward-scrolling
                 if (st > 50) {
+                   
+                    headerfixedbg.addClass("header-bg-fixed");
+                    headerfixed.addClass("header-main-fixed");
+                }
+            }
+            else {
+                //Replace this with your function call for upward-scrolling
+                if (st < 50) {
+                    headerfixed.removeClass("header-main-fixed");
+                    headerfixedbg.removeClass("header-bg-fixed");
+
+                    //headerfixed.addClass("header-main-fixed")
+                }
+            }
+            //Updates scroll position
+            lastScroll = st;
+        });
+    });
+		
+
+
+	/**
+	    $(function () {
+        //Keep track of last scroll
+        var lastScroll = 0;
+        var headerfixed = $("#header-main-fixed");
+        var headerfixedbg = $(".header-bg");
+        $(window).scroll(function () {
+            //Sets the current scroll position
+            var st = $(this).scrollTop();
+            //Determines up-or-down scrolling
+            if (st > lastScroll) {
+
+                //Replace this with your function call for downward-scrolling
+                if (st > 50) {
                     var $obj = $(".header-top-login");
                     if ($obj.hasClass("expanded")) {
                         $obj.removeClass("expanded");
@@ -38,9 +73,11 @@ jQuery(document).ready(function ($) {
             lastScroll = st;
         });
     });
-		
 
-    $(function () {
+	*/
+	
+	
+	$(function () {
         $('.dropdown').hover(function () {
             $(this).addClass('open');
         }, function () {

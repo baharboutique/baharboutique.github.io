@@ -13,27 +13,27 @@ jQuery(document).ready(function ($) {
             var st = $(this).scrollTop();
             //Determines up-or-down scrolling
             if (st > lastScroll) {
-
+/**
                 //Replace this with your function call for downward-scrolling
                 if (st > 50) {
-                   var $obj = $(".header-top-login");
-                   // if ($obj.hasClass("expanded")) {
-                   //     $obj.removeClass("expanded");
-                   //     $obj.slideUp("fast");
-                  //  }
+                    var $obj = $(".header-top-login");
+                    if ($obj.hasClass("expanded")) {
+                        $obj.removeClass("expanded");
+                        $obj.slideUp("fast");
+                    }*/
                     headerfixedbg.addClass("header-bg-fixed");
                     headerfixed.addClass("header-main-fixed");
-                }
+                //}
             }
             else {
                 //Replace this with your function call for upward-scrolling
-                if (st < 50) {
+              //  if (st < 50) {
                     headerfixed.removeClass("header-main-fixed");
                     headerfixedbg.removeClass("header-bg-fixed");
 
                     //headerfixed.addClass("header-main-fixed")
                 }
-            }
+       //     }
             //Updates scroll position
             lastScroll = st;
         });

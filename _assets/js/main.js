@@ -249,7 +249,8 @@ jQuery(document).ready(function ($) {
              
               navigationType: "none",
               navigationArrows: "solo",
-							navigationStyle: "preview1",
+							//navigationStyle: "preview1",
+							navigationStyle: "navbar-old", 
               soloArrowLeftHalign: "left",
               soloArrowLeftValign: "center",
               soloArrowLeftHOffset: 20,

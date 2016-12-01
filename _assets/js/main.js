@@ -250,7 +250,7 @@ jQuery(document).ready(function ($) {
               navigationType: "none",
               navigationArrows: "solo",
 							//navigationStyle: "preview1",
-							navigationStyle: "navbar-old", 
+							navigationStyle: "square", 
               soloArrowLeftHalign: "left",
               soloArrowLeftValign: "center",
               soloArrowLeftHOffset: 20,

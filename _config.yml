@@ -71,7 +71,7 @@ profiles:
         - google
         - pinterest
     facebook: 'https://www.facebook.com/baharboutiquetesettuer'
-    twitter: 'https://twitter.com/Bahar_Boutique'
+    twitter: 'https://twitter.com/Baharboutique'
     google: 'https://plus.google.com/+BaharBoutiqueTesettürBremen'
     pinterest: 'https://de.pinterest.com/baharboutiquete/'
 
@@ -79,7 +79,7 @@ comments:
     provider: '1'
 
 address: 'Gröpelinger Heerstr. 213'
-zipcity: '28359 Bremen'
+zipcity: '28239 Bremen'
 country: 'Deutschland'
 tel: '+49(0)421 39094188'
 email: 'info@baharboutique.com'

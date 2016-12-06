@@ -23,7 +23,7 @@
         <fieldset name="colors" title="Farben">
             <field name="colors" type="multiform" label="Farben" filter="array">
                 <field name="name" type="text" label="Name" filter="string" class="form-control" />
-                <field name="code" type="color" label="Farbe" filter="string" class="form-control" />
+                <field name="hexcode" type="color" label="Farbe" filter="string" class="form-control" />
             </field>
         </fieldset>
     </fields>

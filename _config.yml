@@ -74,7 +74,7 @@ profiles:
     facebook: 'https://www.facebook.com/baharboutiquetesettuer'
     twitter: 'https://twitter.com/Baharboutique'
     google: 'https://plus.google.com/+BaharBoutiqueTesettürBremen'
-    pinterest: 'https://de.pinterest.com/baharboutiquete/'
+    pinterest: 'https://de.pinterest.com/baharboutiquete'
 
 comments:
     provider: '1'

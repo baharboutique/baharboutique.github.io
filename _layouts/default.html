@@ -6,10 +6,17 @@
 <html lang="en" class="no-js">
   <!--<![endif]-->
   <head>
+    <script type="text/javascript">
+      var host = "yoursite.com";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+          window.location.protocol = "https";
+    </script>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     {% css theme-style.css %}
     
@@ -21,7 +28,7 @@
     {% js vendor/modernizr %}
     <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
     <script type="text/javascript">
-      window.cookieconsent_options = {"message":"Diese Website benutzt cookies um Ihnen die best mögliche Erfahrung zu ermöglichen.","dismiss":"Alles klar!","learnMore":"Mehr       Infos","link":"http://baharboutique.com/datenschutz.html","theme":"dark-bottom"};
+      window.cookieconsent_options = {"message":"Diese Website benutzt cookies um Ihnen die best mögliche Erfahrung zu ermöglichen.","dismiss":"Alles klar!","learnMore":"Mehr       Infos","link":"https://baharboutique.com/datenschutz.html","theme":"dark-bottom"};
     </script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
     <!-- End Cookie Consent plugin -->
@@ -171,7 +178,7 @@
             <div class="col-md-12">
               <a href="index.html" class="logo-copy pull-left"></a>
               <p class="pull-left">
-                Copyright © 2016 <a href="/">baharboutique.com</a> <br>All rights reserved.
+                Copyright © 2016 <a href="#">baharboutique.com</a> <br>All rights reserved.
               </p>
               <ul class="footer-payments pull-right">
                 <li><img src="img/payment-maestro.jpg" alt="payment" /></li>

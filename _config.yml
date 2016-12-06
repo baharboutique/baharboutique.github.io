@@ -1,5 +1,6 @@
 title: 'Bahar Boutique Tesettür'
-url: 'https://baharboutique.com'
+url: https://baharboutique.com
+enforce_ssl: baharboutique.com
 locale: de_DE
 timezone: Europe/Berlin
 sharing:
@@ -15,7 +16,7 @@ sharing:
         - tumblr
         - buffer
         - vk
-    limit: 'false'
+    limit: false
     style: icons
 defaults:
     -

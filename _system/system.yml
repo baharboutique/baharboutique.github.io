@@ -18,9 +18,7 @@ posts:
     posts:
       title: Posts
       icon: file
-    categories:
-      title: Categories
-      icon: folder
+
     authors:
       title: Authors
       icon: user

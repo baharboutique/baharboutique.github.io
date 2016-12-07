@@ -41,6 +41,12 @@ defaults:
             layout: product
             seo:
                 type: Product
+    -
+        scope:
+            path: ''
+            type: posts
+        values:
+            layout: blog_post
 collections:
     products:
         output: true

@@ -1,13 +1,26 @@
 pages:
-    title: Pages
-    icon: sitemap
+  title: Pages
+  icon: sitemap
 products:
-    title: Shop
-    icon: shopping-cart
-    items:
-        products:
-            title: Products
-            icon: tags
-        categories:
-            title: Categories
-            icon: folder
+  title: Shop
+  icon: shopping-cart
+  items:
+    products:
+      title: Products
+      icon: tags
+    categories:
+      title: Categories
+      icon: folder
+posts:
+  title: Blog
+  icon: copy
+  items:
+    posts:
+      title: Posts
+      icon: file
+    categories:
+      title: Categories
+      icon: folder
+    authors:
+      title: Authors
+      icon: user

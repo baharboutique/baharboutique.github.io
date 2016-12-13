@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<section>
+		<div class="block-blog color-scheme-3">
+				<div class="container">
+						<div class="header-1">
+								<h1>{{ page.title }}</h1>
+						</div>
+						<div class="row">
+								<div class="col-sm-8 col-md-9 col-lg-9">
+										{{ content }}
+										<div class="block">
+												<p class="post-information">
+														<span><i class="icon-user"></i> By {{ page.author }}</span>
+														<span><i class="icon-time"></i> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string }}</time></span>
+														<span><i class="icon-link"></i> <a href=""> Fashion</a></span>
+														<i class="icon-comments"></i><a href=""> 0 Comments</a>
+												</p>
+												<div class="clearfix"></div>
+										</div>
+										
+										<div class="block block-related-posts block-banner">
+												<div class="block">
+														{% include disqus.html %}
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</section>

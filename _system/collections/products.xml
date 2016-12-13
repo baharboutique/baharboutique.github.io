@@ -5,7 +5,7 @@
             <field name="category" type="itemlist" label="Kategorie" filter="string" class="form-control" admintable="true" required="true" app="categories"/>
             <field name="old_price" type="text" label="Alter Preis" filter="string" class="form-control" admintable="true" />
             <field name="price" type="text" label="Preis" filter="string" class="form-control" admintable="true" />
-            <field name="sku" type="text" label="SKU" filter="string" class="form-control" />
+            <!--<field name="sku" type="text" label="SKU" filter="string" class="form-control" />-->
             <field name="brand" type="text" label="Marke/Hersteller" filter="string" class="form-control" admintable="true" />
             <field name="id" type="uuid" uuid="ai" filter="integer" />
         </fieldset>
@@ -15,8 +15,15 @@
         </fieldset>
 
         <fieldset name="sizes" title="Größen">
-            <field name="sizes" type="multiform" label="Größen" filter="array" default='[{"name": "S"}, {"name": "M"}, {"name": "L"}]'>
+            <field name="sizes" type="multiform" label="Größen" filter="array">
                 <field name="name" type="text" label="Größe" filter="string" class="form-control" />
+            </field>
+        </fieldset>
+        
+        <fieldset name="colors" title="Farben">
+            <field name="colors" type="multiform" label="Farben" filter="array">
+                <field name="name" type="text" label="Name" filter="string" class="form-control" />
+                <field name="hexcolor" type="color" label="Farbe" class="form-control" />
             </field>
         </fieldset>
     </fields>

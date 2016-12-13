@@ -235,6 +235,7 @@ jQuery(document).ready(function ($) {
                 fullScreenOffsetContainer: "",
                 responsiveLevels: [2048,1024,778,480],
                 panZoomDisableOnMobile: "on"
+
             });
             
             */
@@ -267,6 +268,7 @@ jQuery(document).ready(function ($) {
               
              // responsiveLevels: [2048,1024,778,480]
                
+
             });
 
     // Top login open functions

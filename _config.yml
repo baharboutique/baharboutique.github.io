@@ -1,5 +1,6 @@
 title: 'Bahar Boutique Tesettür'
-url: 'https://baharboutique.com'
+url: https://baharboutique.com
+enforce_ssl: baharboutique.com
 locale: de_DE
 timezone: Europe/Berlin
 sharing:
@@ -15,7 +16,7 @@ sharing:
         - tumblr
         - buffer
         - vk
-    limit: 'false'
+    limit: false
     style: icons
 defaults:
     -
@@ -40,15 +41,21 @@ defaults:
             layout: product
             seo:
                 type: Product
+    -
+        scope:
+            path: ''
+            type: posts
+        values:
+            layout: blog_post
 collections:
     products:
         output: true
-        permalink: '/:path.html'
+        permalink: ':path.html'
     categories:
         output: true
-        permalink: '/:path.html'
+        permalink: ':path.html'
 mediaurl: _media
-baseurl: /
+baseurl: 
 exclude:
     - vendor
     - Gemfile
@@ -71,17 +78,15 @@ profiles:
         - google
         - pinterest
     facebook: 'https://www.facebook.com/baharboutiquetesettuer'
-    twitter: 'https://twitter.com/Bahar_Boutique'
-    google: 'https://plus.google.com/105140503278343271378'
-    pinterest: 'https://de.pinterest.com/baharboutiquete/'
-analytics:
-    provider: google_analytics
-    tracking_id: UA-77304209-1
+    twitter: 'https://twitter.com/Baharboutique'
+    google: 'https://plus.google.com/+BaharBoutiqueTesettürBremen'
+    pinterest: 'https://de.pinterest.com/baharboutiquete'
+
 comments:
     provider: '1'
 
 address: 'Gröpelinger Heerstr. 213'
-zipcity: '28359 Bremen'
+zipcity: '28239 Bremen'
 country: 'Deutschland'
 tel: '+49(0)421 39094188'
 email: 'info@baharboutique.com'

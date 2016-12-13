@@ -6,12 +6,37 @@
 <html lang="en" class="no-js">
   <!--<![endif]-->
   <head>
+    <script type="text/javascript">
+      var host = "baharboutique.com";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+          window.location.protocol = "https";
+    </script>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     {% css theme-style.css %}
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    {% js vendor/modernizr %}
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+      window.cookieconsent_options = {"message":"Diese Website benutzt cookies um Ihnen die best mögliche Erfahrung zu ermöglichen.","dismiss":"Alles klar!","learnMore":"Mehr       Infos","link":"https://baharboutique.com/datenschutz.html","theme":"dark-bottom"};
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+    
+    <script src="//load.sumome.com/" data-sumo-site-id="31ff556254aa7b03f684b87fbb084595bd424230d02bf10b53e9cebfc3bd9801" async="async"></script>
+    <meta name="google-site-verification" content="sInJwhiwH1-JHMDoqekmVmmMjfyD1xKPwrVQAjYXsO0" />
+  </head>
+  <body>
     <!-- Google Tag Manager -->
     <script>
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -21,23 +46,6 @@
       })(window,document,'script','dataLayer','GTM-KFS2Z2');
     </script>
     <!-- End Google Tag Manager -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    {% js vendor/modernizr %}
-    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
-    <script type="text/javascript">
-      window.cookieconsent_options = {"message":"Diese Website benutzt cookies um Ihnen die best mögliche Erfahrung zu ermöglichen.","dismiss":"Alles klar!","learnMore":"Mehr       Infos","link":"http://baharboutique.com/datenschutz.html","theme":"dark-bottom"};
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
-    <!-- End Cookie Consent plugin -->
-    
-    <script src="//load.sumome.com/" data-sumo-site-id="31ff556254aa7b03f684b87fbb084595bd424230d02bf10b53e9cebfc3bd9801" async="async"></script>
-    <meta name="google-site-verification" content="sInJwhiwH1-JHMDoqekmVmmMjfyD1xKPwrVQAjYXsO0" />
-  </head>
-  <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFS2Z2"
@@ -80,12 +88,12 @@
               </div>
               <div id="navbar-collapse-1" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                  {% for item in site.categories %}
-                  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                  {% for item in site.categories | where: 'published', 1 %}
+                  <li><a href="{{ item.url }}">{{ item.menutitle }}</a></li>
                    {% endfor %}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  {% for item in site.pages %}{% unless item.slug == "index" %}{% unless item.parent %}{% unless item.menu == false %}
+                  {% for item in site.pages | where: 'published', 1 %}{% unless item.slug == "index" %}{% unless item.parent %}{% unless item.menu == false %}
                   {% assign submenu = (site.pages | where: 'published', 1 | where: 'parent', item.slug | sort: 'order') %}
                   {% assign submenusize = submenu | size %}
                   {% if submenusize > 0 %}
@@ -170,7 +178,7 @@
             <div class="col-md-12">
               <a href="index.html" class="logo-copy pull-left"></a>
               <p class="pull-left">
-                Copyright © 2016 <a href="/">baharboutique.com</a> <br>All rights reserved.
+                Copyright © 2016 <a href="#">baharboutique.com</a> <br>All rights reserved.
               </p>
               <ul class="footer-payments pull-right">
                 <li><img src="img/payment-maestro.jpg" alt="payment" /></li>

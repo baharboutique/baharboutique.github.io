@@ -2,7 +2,7 @@
   <div class="block product-section color-scheme-3">
     <div class="container">
       <div class="header-1">
-        <h1>Neue Produkte</h1>
+        <h1>Unsere Highlights</h1>
         <div class="header-bottom-line"></div>
         <div class="block-toolbar">
           <a href="javascript:;" data-role="prev" class="prev jp-disabled"><i class="icon-angle-left"></i></a>
@@ -10,23 +10,24 @@
         </div>
       </div>
       <ul class="row list-unstyled" id="products" style="min-height: 442px;">
-        {% for product in site.products | where: 'published', 1 %}
+        {% assign products = site.products | where: 'published', 1 %}
+        {% for item in products %}
         <li class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center animated fadeInRight">
           <div class="product">
             <figure class="figure-hover-overlay">
-              <a href="{{ product.url }}" class="figure-href"></a>
-              {% assign img = product.gallery[0].src | remove_first: '_media/' %}
-              {% include img src=img width="400" height="750" title=product.title class='img-responsive' %}
+              <a href="{{ item.url }}" class="figure-href"></a>
+              {% assign img = item.gallery[0].src | remove_first: '_media/' %}
+              {% include img src=img width="400" height="750" title=item.title class='img-responsive' %}
               <span class="bar"></span>
               <!--figcaption>
                 <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
-                <a href="{{ product.url }}" class="shoping"><i class="glyphicon glyphicon-shopping-cart"></i> Jetzt Kaufen</a>
+                <a href="{{ item.url }}" class="shoping"><i class="glyphicon glyphicon-shopping-cart"></i> Jetzt Kaufen</a>
                 <a href="#" title="Compare"><i class="glyphicon glyphicon-sort"></i></a>
               </figcaption-->
             </figure>
             <div class="product-caption">
-              <a href="#" class="product-name">{{ product.title }}</a>
-              <p class="product-price">{% if product.old_price %}<span>&euro;{{ product.old_price }}</span>{% endif %} &euro;{{ product.price }} zzgl. Versand</p>
+              <a href="#" class="product-name" style="min-height: 50px;">{{ item.title }}</a>
+              <p class="product-price">{% if item.old_price %}<span>&euro;{{ item.old_price }}</span>{% endif %} &euro;{{ item.price }} zzgl. Versand</p>
               <div class="product-rating">
                 <div class="stars">
                   <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>

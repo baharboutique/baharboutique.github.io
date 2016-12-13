@@ -52,6 +52,16 @@ layout: default
                     <label class="pull-left">Produkt Code:</label> <span class="item_sku">{{ page.sku }}</span>
                   </div>
                   {% endif %}
+                  {% if page.colors %}
+                  <div class="clearfix">
+                    <label class="pull-left">Farbe:</label>
+                    <select name="color" class="item_color form-control">
+                      {% for color in page.colors %}
+                      <option value="{{ color.name }}">{{ color.code }}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                  {% endif %}
                   {% if page.sizes %}
                   <div class="clearfix">
                     <label class="pull-left">Größe:</label>

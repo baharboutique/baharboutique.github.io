@@ -17,15 +17,15 @@ jQuery(document).ready(function ($) {
                 //Replace this with your function call for downward-scrolling
                 if (st > 50) {
                    
-                    headerfixedbg.addClass("header-bg-fixed");
-                    headerfixed.addClass("header-main-fixed");
+                  //  headerfixedbg.addClass("header-bg-fixed");
+                  //  headerfixed.addClass("header-main-fixed");
                 }
             }
             else {
                 //Replace this with your function call for upward-scrolling
                 if (st < 50) {
-                    headerfixed.removeClass("header-main-fixed");
-                    headerfixedbg.removeClass("header-bg-fixed");
+                 //   headerfixed.removeClass("header-main-fixed");
+                 //   headerfixedbg.removeClass("header-bg-fixed");
 
                     //headerfixed.addClass("header-main-fixed")
                 }

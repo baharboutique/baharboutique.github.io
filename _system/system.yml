@@ -18,7 +18,6 @@ posts:
     posts:
       title: Posts
       icon: file
-
     authors:
       title: Authors
       icon: user

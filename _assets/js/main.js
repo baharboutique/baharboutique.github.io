@@ -3,7 +3,42 @@
 jQuery(document).ready(function ($) {
     "use strict";
 
-    $(function () {
+//     $(function () {
+//         //Keep track of last scroll
+//         var lastScroll = 0;
+//         var headerfixed = $("#header-main-fixed");
+//         var headerfixedbg = $(".header-bg");
+//         $(window).scroll(function () {
+//             //Sets the current scroll position
+//             var st = $(this).scrollTop();
+//             //Determines up-or-down scrolling
+//             if (st > lastScroll) {
+
+//                 //Replace this with your function call for downward-scrolling
+//                 if (st > 50) {
+                   
+//                     headerfixedbg.addClass("header-bg-fixed");
+//                     headerfixed.addClass("header-main-fixed");
+//                 }
+//             }
+//             else {
+//                 //Replace this with your function call for upward-scrolling
+//                 if (st < 50) {
+//                     headerfixed.removeClass("header-main-fixed");
+//                     headerfixedbg.removeClass("header-bg-fixed");
+
+//                     //headerfixed.addClass("header-main-fixed")
+//                 }
+//             }
+//             //Updates scroll position
+//             lastScroll = st;
+//         });
+//     });
+		
+
+
+	/**
+	    $(function () {
         //Keep track of last scroll
         var lastScroll = 0;
         var headerfixed = $("#header-main-fixed");
@@ -39,7 +74,10 @@ jQuery(document).ready(function ($) {
         });
     });
 
-    $(function () {
+	*/
+	
+	
+	$(function () {
         $('.dropdown').hover(function () {
             $(this).addClass('open');
         }, function () {
@@ -136,7 +174,10 @@ jQuery(document).ready(function ($) {
 //        touchenabled: "on"
 //
 //    });
-    jQuery('.tp-banner').show().revolution(
+   
+  
+  /**
+  jQuery('.tp-banner').show().revolution(
             {
                 dottedOverlay: "none",
                 delay: 16000,
@@ -194,8 +235,41 @@ jQuery(document).ready(function ($) {
                 fullScreenOffsetContainer: "",
                 responsiveLevels: [2048,1024,778,480],
                 panZoomDisableOnMobile: "on"
-            });
 
+            });
+            
+            */
+  
+  
+  jQuery('.tp-banner').show().revolution(
+            {
+             delay:9000,
+							startwidth:1920,
+							startheight:400, //responsiveLevels seems to be a container
+							hideThumbs:10,
+             
+              navigationType: "none",
+              navigationArrows: "solo",
+							//navigationStyle: "preview1",
+							navigationStyle: "square", 
+              soloArrowLeftHalign: "left",
+              soloArrowLeftValign: "center",
+              soloArrowLeftHOffset: 20,
+              soloArrowLeftVOffset: 0,
+              soloArrowRightHalign: "right",
+              soloArrowRightValign: "center",
+              soloArrowRightHOffset: 20,
+              soloArrowRightVOffset: 0,
+              
+              
+                          
+ 
+              
+              
+             // responsiveLevels: [2048,1024,778,480]
+               
+
+            });
 
     // Top login open functions
     $("#header-login").click(function () {

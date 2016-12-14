@@ -53,14 +53,21 @@ layout: default
                   </div>
                   {% endif %}
                   {% if page.colors %}
-                  <div class="clearfix">
+                  <div class="clearfix block-color">
+                    <ul class="colors clearfix list-unstyled">
+                      {% for color in page.colors %}
+                      <li><a href="" rel="{{ color.code }}"></a></li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+<!--                   <div class="clearfix">
                     <label class="pull-left">Farbe:</label>
                     <select name="color" class="item_color form-control">
                       {% for color in page.colors %}
                       <option value="{{ color.name }}">{{ color.code }}</option>
                       {% endfor %}
                     </select>
-                  </div>
+                  </div> -->
                   {% endif %}
                   {% if page.sizes %}
                   <div class="clearfix">

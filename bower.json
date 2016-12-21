@@ -1,7 +1,8 @@
 {
-  "name": "baharboutique",
+  "name": "baharboutique.com",
   "authors": [
-    "Adam Bouqdib <adam@abemedia.co.uk>"
+    "Adam Bouqdib <adam@abemedia.co.uk>",
+    "Joseph Bouqdib <joseph@bouqdib.com>"
   ],
   "private": true,
   "ignore": [

@@ -1,1 +1,1 @@
-Sitemap: http://baharboutique.com/sitemap.xml
+Sitemap: https://baharboutique.com/sitemap.xml

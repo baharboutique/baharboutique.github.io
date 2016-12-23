@@ -16,6 +16,7 @@ simpleCart({
             return  '<p><a href="' + item.get('url') + '" class="h4">' + item.get('name') + '</a><br>' +
                     (item.get('brand') ? 'Hersteller: ' + item.get('brand') + '<br>' : '') +
                     (item.get('size') ? 'Größe: ' + item.get('size') + '<br>' : '') +
+                    (item.get('color') ? 'Farbe: ' + item.get('color') + '<br>' : '') +
                     '</p>' +
                     '<a href="javascript:;" class="simpleCart_remove">Entfernen</a>';
           }, attr: "product", label: "Produkt"} ,
@@ -28,9 +29,9 @@ simpleCart({
         }
     ]
 });
-simpleCart({
+/*simpleCart({
      shippingFlatRate: 5
-});
+});*/
 
 //simpleCart.currency().decimal = ',';
 //simpleCart.currency().delimiter = '.';

@@ -57,7 +57,7 @@ layout: default
                     <label class="pull-left">Farben:</label>
                     <ul class="colors clearfix list-unstyled">
                       {% for color in page.colors %}
-                      <li><a href="" rel="{{ color.code }}"></a></li>
+                      <li><a href="" rel="{{ color.code }}" class="item_color form-control"></a></li>
                       {% endfor %}
                     </ul>
                   </div>
@@ -82,7 +82,7 @@ layout: default
                   </div>
                   <div class="clearfix">
                     <label class="pull-left">Preis:</label>
-                    <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} zzgl. Versand</p>
+                    <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} inkl. MwSt</p>
                   </div>
                   <div class="text-center">
                     <button class="btn-default-1 item_add"><i class="glyphicon glyphicon-shopping-cart"></i> Jetzt Kaufen</button>

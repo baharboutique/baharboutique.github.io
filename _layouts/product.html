@@ -57,7 +57,7 @@ layout: default
                     <label class="pull-left">Farben:</label>
                     <select name="color" class="item_color form-control">
                       {% for color in page.colors %}
-                      <option value="{{ color.code }}"><span class="colorbox" style="background:#{{ color.code }}"></span></option>
+                      <option value="#{{ color.code }}"><span class="colorbox" style="background:#{{ color.code }}"></span></option>
                       {% endfor %}
                     </select>
                   </div>

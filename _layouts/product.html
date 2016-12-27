@@ -5,7 +5,7 @@ layout: default
   <div class="color-scheme-3">
     <div class="container">
       <div class="row">
-        <div class="product-detail-section col-xs-12 col-sm-8 col-md-9 col-lg-9">
+        <div class="product-detail-section col-xs-12">
           <div class="product-list">
             <div class="row simpleCart_shelfItem">
               <div class="hidden">
@@ -34,7 +34,7 @@ layout: default
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <h3 class="item_name">{{ page.title }}</h3>
+                <h1 class="item_name">{{ page.title }}</h1>
                 <div class="product-rating">
                   <div class="stars">
                     <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
@@ -54,10 +54,10 @@ layout: default
                   {% endif %}
                   {% if page.colors %}
                   <div class="clearfix">
-                    <label class="pull-left">Farbe:</label>
+                    <label class="pull-left">Farben:</label>
                     <select name="color" class="item_color form-control">
                       {% for color in page.colors %}
-                      <option value="{{ color.name }}">{{ color.code }}</option>
+                      <option value="#{{ color.code }}">{{ color.name }}</option>
                       {% endfor %}
                     </select>
                   </div>
@@ -82,6 +82,7 @@ layout: default
                   </div>
                   <div class="clearfix">
                     <label class="pull-left">Preis:</label>
+<<<<<<< HEAD
                     <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} zzgl. Versand</p>
                   </div>
                   <!---------------------------------------->
@@ -92,6 +93,9 @@ layout: default
                   <!---------------------------------------->                  
                   <div class="header-1">
                     <div class="header-bottom-line"></div>
+=======
+                    <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} inkl. MwSt</p>
+>>>>>>> bea9f8ee29e6531be2d203aaf62dacf4ecb6c0ea
                   </div>
                   <div class="text-center">
                     <button class="btn-default-1 item_add"><i class="glyphicon glyphicon-shopping-cart"></i> Jetzt Kaufen</button>

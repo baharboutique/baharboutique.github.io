@@ -6,17 +6,17 @@
 <html lang="en" class="no-js">
   <!--<![endif]-->
   <head>
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
       var host = "baharboutique.com";
       if ((host == window.location.host) && (window.location.protocol != "https:"))
           window.location.protocol = "https";
-    </script>
+    </script>-->
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <!--<link rel="canonical" href="{{ site.url }}{{ page.url }}" />-->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     {% css theme-style.css %}
     
@@ -26,32 +26,12 @@
     <![endif]-->
     
     {% js vendor/modernizr %}
-    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
-    <script type="text/javascript">
-      window.cookieconsent_options = {"message":"Diese Website benutzt cookies um Ihnen die best mögliche Erfahrung zu ermöglichen.","dismiss":"Alles klar!","learnMore":"Mehr       Infos","link":"https://baharboutique.com/datenschutz.html","theme":"dark-bottom"};
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
-    <!-- End Cookie Consent plugin -->
     
+
     <script src="//load.sumome.com/" data-sumo-site-id="31ff556254aa7b03f684b87fbb084595bd424230d02bf10b53e9cebfc3bd9801" async="async"></script>
     <meta name="google-site-verification" content="sInJwhiwH1-JHMDoqekmVmmMjfyD1xKPwrVQAjYXsO0" />
   </head>
   <body>
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-KFS2Z2');
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFS2Z2"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- Header-->
     <header id="header">
       <div class="header-bg">
@@ -60,16 +40,16 @@
             <div id="container-fixed">
               <div class="row">
                 <div class="col-md-6">
-                  <a href="index.html" class="header-logo pull-left"></a>    
+                  <a href="{{ site.url }}" class="header-logo pull-left"></a>    
                 </div>
                 <div class="col-md-6">
                   <div class="header-mini-cart  pull-right">
-                    <a href="{{ site.baseurl }}cart">
+                    <a href="cart">
                       <span class="navbar-cart"></span>
                     </a>
                   </div><!-- /header-mini-cart -->
                   <div class="top-search-form  pull-right">
-                    <form action="{{ site.baseurl }}search">
+                    <form action="{{ site.url }}search">
                       <input name="q" type="text" placeholder="Search ...">
                       <button type="submit"><i class="icon-search"></i></button>
                     </form>  
@@ -84,7 +64,7 @@
             <div class="container">
               <div class="navbar-header">
                 <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a href="index.html" class="navbar-brand"><i class="icon-home"></i></a>
+                <a href="{{ site.url }}" class="navbar-brand"><i class="icon-home"></i></a>
               </div>
               <div id="navbar-collapse-1" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -146,7 +126,7 @@
               <p>
                 Jetzt zu unserem Newsletter anmelden und immer über Angebote auf dem neuesten Stand sein!
               </p>
-              <form class="form-horizontal" action="https://baharboutique.us13.list-manage.com/subscribe/post" target="_blank" id="mailchimp_form">
+              <form class="form-horizontal" action="//baharboutique.us13.list-manage.com/subscribe/post" target="_blank" id="mailchimp_form">
                 <label class="sr-only" for="email">Email Address</label>
                 <input type="email" class="input" placeholder="Email" id="email" name="EMAIL" required>
                 <input type="hidden" name="u" value="b99955ba3edece5fa95f6f3a0">
@@ -166,7 +146,7 @@
               </div>
               <p><strong>Tel:</strong> {{ site.tel }}<br><strong>Email:</strong> {{ site.email }}</p>
               <p><strong>{{ site.title }}</strong><br>{{ site.address }}, {{ site.zipcity }}, {{ site.country }}</p>
-              <p><a target="_blank" href="https://goo.gl/maps/XmjinLXekb72"><i class="icon-map-marker"></i> Bei Google Maps finden</a></p>
+              <p><a target="_blank" href="//goo.gl/maps/XmjinLXekb72"><i class="icon-map-marker"></i> Bei Google Maps finden</a></p>
             </div>
           </div>
         </div>
@@ -176,7 +156,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <a href="index.html" class="logo-copy pull-left"></a>
+              <a href="{{ site.baseurl }}" class="logo-copy pull-left"></a>
               <p class="pull-left">
                 Copyright © 2016 <a href="#">baharboutique.com</a> <br>All rights reserved.
               </p>
@@ -196,5 +176,21 @@
     <!-- End Section footer -->
     {% js app %}
     <!--script src="js/vendor/tab.js"></script-->
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+      window.cookieconsent_options = {"message":"Diese Website benutzt cookies um Ihnen die best mögliche Erfahrung zu ermöglichen.","dismiss":"Alles klar!","learnMore":"Mehr       Infos","link":"//baharboutique.com/datenschutz.html","theme":"dark-bottom"};
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KFS2Z2');
+    </script>
+    <!-- End Google Tag Manager -->
+    
   </body>
 </html>

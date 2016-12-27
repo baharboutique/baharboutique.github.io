@@ -1,5 +1,0 @@
-# Changes to test
-
-jQuery jPages - defaults.links was "blank" in original
-Lightbox - updated from v2.6
-Removed seperate bootstrap "tab.js" 

@@ -55,7 +55,6 @@ collections:
         output: true
         permalink: ':path.html'
 mediaurl: _media
-baseurl: 
 exclude:
     - vendor
     - Gemfile
@@ -77,10 +76,10 @@ profiles:
         - twitter
         - google
         - pinterest
-    facebook: 'https://www.facebook.com/baharboutiquetesettuer'
-    twitter: 'https://twitter.com/Baharboutique'
-    google: 'https://plus.google.com/+BaharBoutiqueTesettürBremen'
-    pinterest: 'https://de.pinterest.com/baharboutiquete'
+    facebook: '//www.facebook.com/baharboutiquetesettuer'
+    twitter: '//twitter.com/BaharBoutique'
+    google: '//plus.google.com/+BaharBoutiqueTesettürBremen'
+    pinterest: '//de.pinterest.com/baharboutiquete'
 
 comments:
     provider: '1'

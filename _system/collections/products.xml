@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
-    <fields>
-        <fieldset name="options">
-            <field name="category" type="itemlist" label="Kategorie" filter="string" class="form-control" admintable="true" required="true" app="categories"/>
-            <field name="old_price" type="text" label="Alter Preis" filter="string" class="form-control" admintable="true" />
-            <field name="price" type="text" label="Preis" filter="string" class="form-control" admintable="true" />
-            <!--<field name="sku" type="text" label="SKU" filter="string" class="form-control" />-->
-            <field name="brand" type="text" label="Marke/Hersteller" filter="string" class="form-control" admintable="true" />
-            <field name="id" type="uuid" uuid="ai" filter="integer" />
-        </fieldset>
+  <fields>
+    <fieldset name="options">
+      <field name="category" type="itemlist" label="Kategorie" filter="string" class="form-control" admintable="true" required="true" app="categories"/>
+      <field name="old_price" type="text" label="Alter Preis" filter="string" class="form-control" admintable="true" />
+      <field name="price" type="text" label="Preis" filter="string" class="form-control" admintable="true" />
+      <!--<field name="sku" type="text" label="SKU" filter="string" class="form-control" />-->
+      <field name="brand" type="text" label="Marke/Hersteller" filter="string" class="form-control" admintable="true" />
+      <field name="highlight" type="checkbox" label="Highlight / Bestseller" value="1" default="0" class="form-control" admintable="true" />
+      <field name="id" type="uuid" uuid="ai" filter="integer" />
+    </fieldset>
 
-        <fieldset name="gallery" title="Fotos">
-            <field name="gallery" type="gallery" filter="array" label="Gallery" idfield="id" path="_media/products" />
-        </fieldset>
+    <fieldset name="gallery" title="Fotos">
+      <field name="gallery" type="gallery" filter="array" label="Gallery" idfield="id" path="_media/products" />
+    </fieldset>
 
-        <fieldset name="sizes" title="Größen">
-            <field name="sizes" type="multiform" label="Größen" filter="array">
-                <field name="name" type="text" label="Größe" filter="string" class="form-control" />
-            </field>
-        </fieldset>
-        
-        <fieldset name="colors" title="Farben">
-            <field name="colors" type="multiform" label="Farben" filter="array">
-                <field name="name" type="text" label="Name" filter="string" class="form-control" />
-                <field name="hexcolor" type="color" label="Farbe" class="form-control" />
-            </field>
-        </fieldset>
-    </fields>
+    <fieldset name="sizes" title="Größen">
+      <field name="sizes" type="multiform" label="Größen" filter="array">
+        <field name="name" type="text" label="Größe" filter="string" class="form-control" />
+      </field>
+    </fieldset>
+
+    <fieldset name="colors" title="Farben">
+      <field name="colors" type="multiform" label="Farben" filter="array">
+        <field name="name" type="text" label="Name" filter="string" class="form-control" />
+        <field name="code" type="text" label="Farbcode" filter="string" class="form-control" />
+      </field>
+    </fieldset>
+  </fields>
 </form>

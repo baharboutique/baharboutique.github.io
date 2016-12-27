@@ -81,9 +81,15 @@ layout: default
                     </select>
                   </div>
                   <div class="clearfix">
+                    <label class="pull-left">Verfügbarkeit:</label>
+                    <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} zzgl. Versand</p>
+                  </div>
+                  <!---------------------------------------->
+                  <div class="clearfix">
                     <label class="pull-left">Preis:</label>
                     <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} zzgl. Versand</p>
                   </div>
+                  <!---------------------------------------->                  
                   <div class="header-1">
                     <div class="header-bottom-line"></div>
                   </div>

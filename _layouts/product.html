@@ -87,7 +87,7 @@ layout: default
                   <!---------------------------------------->
                   <div class="clearfix">
                     <label class="pull-left">Verfügbarkeit</label>
-                    <p class="product-amount"><span>page.availability</span></p>
+                    <p class="product-amount">{% if page.availability %}<span>{{ page.availability }}</span></p>
                   </div>
                   <!---------------------------------------->                  
                   <div class="header-1">

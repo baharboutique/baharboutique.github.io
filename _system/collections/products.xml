@@ -11,8 +11,9 @@
       <field name="id" type="uuid" uuid="ai" filter="integer" />
       <field name="availability" type="list" label="Verfügbarkeit" default="Auf Lager" class="form-control"> 
         <option value="Auf Lager">Auf Lager</option> 
-        <option value="Nur noch 1 verfügbar">Nur noch 1 verfügbar</option> 
-        <option value="Nicht verfügbar">Nicht verfügbar</option> 
+        <option value="Nur noch wenige verfügbar">Nur wenige</option>
+        <option value="Nur noch 1 verfügbar">Nur 1</option> 
+        <option value="Nicht verfügbar">Nicht verfügbar</option>
       </field>
     </fieldset>
 

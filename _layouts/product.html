@@ -87,11 +87,11 @@ layout: default
                   </div>
                   <!---------------------------------------->
                   {% case page.availability %}
-                    {% when "Auf Lager"%}
+                    {% when 'Auf Lager'%}
                       {{% assign availability-color = "green"}}
-                   {% when "Nur noch 1 verfügbar"%}
+                   {% when 'Nur noch 1 verfügbar'%}
                       {{% assign availability-color = "yellow"}}
-                   {% when "Nicht verfügbar"%}
+                   {% when 'Nicht verfügbar'%}
                       {{% assign availability-color = "red"}}
                   {% else %}
                        {{% assign availability-color = "green"}}

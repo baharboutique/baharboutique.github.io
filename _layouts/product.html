@@ -86,9 +86,19 @@ layout: default
                     <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} zzgl. Versand</p>
                   </div>
                   <!---------------------------------------->
+                  {% case page.availability %}
+                    {% when "Auf Lager"%}
+                      {{% assign availability-color = "green"}}
+                   {% when "Nur noch 1 verfügbar"%}
+                      {{% assign availability-color = "yellow"}}
+                   {% when "Nicht verfügbar"%}
+                      {{% assign availability-color = "red"}}
+                  {% else %}
+                       {{% assign availability-color = "green"}}
+                  {%endcase%}
                   <div class="clearfix">
                     <label class="pull-left">Verfügbarkeit</label>
-                    <p class="product-availability">{% if page.availability %}<span>{{ page.availability }}</span>{% endif %}</p>
+                    <p style= "font-color:{{availability-color}}" class="product-availability">{{page.availability}}</p>
                   </div>
                   <!---------------------------------------->                  
                   <div class="header-1">

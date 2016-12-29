@@ -82,7 +82,27 @@ layout: default
                   </div>
                   <div class="clearfix">
                     <label class="pull-left">Preis:</label>
-                    <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} inkl. MwSt</p>
+
+                    <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} zzgl. Versand</p>
+                  </div>
+                  <!---------------------------------------->
+                  {% case page.availability %}
+                    {% when 'Auf Lager'%}
+                      {% assign availability-color = "green" %}
+                   {% when 'Nur noch 1 verfügbar'%}
+                      {% assign availability-color = "yellow" %}
+                   {% when 'Nicht verfügbar'%}
+                      {% assign availability-color = "red" %}
+                  {% else %}
+                       {% assign availability-color = "green" %}
+                  {%endcase%}
+                  <div class="clearfix">
+                    <label class="pull-left">Verfügbarkeit</label>
+                    <p style= "color:{{availability-color}}" class="product-availability">{{page.availability}}</p>
+                  </div>
+                  <!---------------------------------------->                  
+                  <div class="header-1">
+                    <div class="header-bottom-line"></div>
                   </div>
                   <div class="text-center">
                     <button class="btn-default-1 item_add"><i class="glyphicon glyphicon-shopping-cart"></i> Jetzt Kaufen</button>

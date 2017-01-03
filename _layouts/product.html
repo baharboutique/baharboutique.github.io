@@ -41,7 +41,7 @@ layout: default
                   </div>
                 </div>
                 <div class="product-information">
-                  {{ content }}
+
                   {% if page.brand %}
                   <div class="clearfix">
                     <label class="pull-left">Hersteller:</label> <span class="item_brand">{{ page.brand }}</span>
@@ -103,7 +103,9 @@ layout: default
                     <label class="pull-left">Verfügbarkeit</label>
                     <p style= "color:{{availability-color}}" class="product-availability">{{page.availability}}</p>
                   </div>
-                  <!---------------------------------------->                  
+                  <!---------------------------------------->  
+                  
+                    {{ content }}
                   <div class="header-1">
                     <div class="header-bottom-line"></div>
                   </div>

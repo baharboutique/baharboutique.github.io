@@ -83,14 +83,10 @@ layout: default
                   </div>
                   <div class="clearfix">
                     <label class="pull-left">Preis:</label>
-                    {% if page.vouchers %}
-                      {% for voucher in page.vouchers %}
-                        {% if voucher.code == "<script type="text/javascript">getAllUrlParams().voucher;</script>" %}
-                          {% assign price-old = page.price %}
-                          {% assign discount = price-old | divided_by: 100.00 | times: voucher.discount %}
-                          {% assign price = price-old | minus: discount %}
-                        {% endif %}
-                      {% endfor %}
+                    {% if page.voucher == '<script type="text/javascript">getAllUrlParams().voucher;</script>' %}
+                      {% assign price-old = page.price %}
+                      {% assign discount = price-old | divided_by: 100.00 | times: page.discount %}
+                      {% assign price = price-old | minus: discount %}
                     {% else %}
                       {% assign price = page.price %}
                       {% if page.old_price %}{% assign price-old = page.old_price %}{% endif %}

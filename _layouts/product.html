@@ -84,14 +84,18 @@ layout: default
                   <div class="clearfix">
                     <label class="pull-left">Preis:</label>
                     {% if page.vouchers %}
-                      {% assign voucher-code = "<script type="text/javascript">getAllUrlParams().voucher;</script>" %}
-                      {% if voucher-code == page.vouchers.code %}
-                        {% assign page.old_price = page.price %}
-                        {% assign discount = page.old_price | divided_by: 100.00 | times: page.vouchers.discount %}
-                        {% assign page.price = page.old_price | minus: discount %}
-                      {% endif %}
+                      {% for voucher in page.vouchers %}
+                        {% if voucher.code == "<script type="text/javascript">getAllUrlParams().voucher;</script>" %}
+                          {% assign price-old = page.price %}
+                          {% assign discount = price-old | divided_by: 100.00 | times: voucher.discount %}
+                          {% assign price = price-old | minus: discount %}
+                        {% endif %}
+                      {% endfor %}
+                    {% else %}
+                      {% assign price = page.price %}
+                      {% if page.old_price %}{% assign price-old = page.old_price %}{% endif %}
                     {% endif %}
-                    <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} inkl. MwSt</p>
+                    <p class="product-price">{% if price-old %}<span>&euro;{{ price-old }}</span>{% endif %} &euro;{{ price }} inkl. MwSt</p>
                   </div>
                   <!---------------------------------------->
                   {% if page.availability %}

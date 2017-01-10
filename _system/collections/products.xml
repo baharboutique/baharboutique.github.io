@@ -37,7 +37,7 @@
     <fieldset name="vouchers" title="Gutscheine/Rabatt">
       <field name="vouchers" type="multiform" label="Gutscheine" filter="array">
         <field name="code" type="text" label="Gutscheincode" filter="string" class="form-control" />
-        <field name="discount" type="list" label="Rabatt" class="form-control"> 
+        <field name="discount" type="list" label="Rabatt" default="" class="form-control"> 
           <option value="5">5%</option> 
           <option value="10">10%</option>
           <option value="15">15%</option>

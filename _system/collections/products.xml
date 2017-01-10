@@ -33,5 +33,18 @@
         <field name="code" type="text" label="Farbcode" filter="string" class="form-control" />
       </field>
     </fieldset>
+    
+    <fieldset name="vouchers" title="Gutscheine/Rabatt">
+      <field name="vouchers" type="multiform" label="Gutscheine" filter="array">
+        <field name="code" type="text" label="Gutscheincode" filter="string" class="form-control" />
+        <field name="discount" type="list" label="Rabatt" class="form-control"> 
+          <option value="5">5%</option> 
+          <option value="10">10%</option>
+          <option value="15">15%</option>
+          <option value="20">20%</option>
+          <option value="25">25%</option>
+        </field>
+      </field>
+    </fieldset>
   </fields>
 </form>

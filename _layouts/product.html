@@ -8,7 +8,7 @@ layout: default
         <div class="product-detail-section col-xs-12">
           <div class="product-list">
             <div class="row simpleCart_shelfItem">
-              <h1 class="item_name">{{ page.title }}</h1>
+              <!--<h1 class="item_name">{{ page.title }}</h1>-->
               <div class="hidden">
                 <span class="item_price">&euro;{{ page.price | replace: ',', '.' }}</span>
                 <span class="item_url">{{ site.url }}{{ page.url }}</span>
@@ -35,7 +35,7 @@ layout: default
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                
+                <h1 class="item_name">{{ page.title }}</h1>
                 <div class="product-rating">
                   <div class="stars">
                     <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
@@ -83,26 +83,33 @@ layout: default
                   </div>
                   <div class="clearfix">
                     <label class="pull-left">Preis:</label>
-
+                    {% if page.vouchers %}
+                      {% assign voucher-code = "<script type="text/javascript">getAllUrlParams().voucher;</script>" %}
+                      {% if voucher-code == page.vouchers.code %}
+                        {% assign page.old_price = page.price %}
+                        {% assign discount = page.old_price | divided_by: 100.00 | times: page.vouchers.discount %}
+                        {% assign page.price = page.old_price | minus: discount %}
+                      {% endif %}
+                    {% endif %}
                     <p class="product-price">{% if page.old_price %}<span>&euro;{{ page.old_price }}</span>{% endif %} &euro;{{ page.price }} inkl. MwSt</p>
                   </div>
                   <!---------------------------------------->
                   {% if page.availability %}
                   {% case page.availability %}
-                    {% when 'Auf Lager'%}
+                    {% when 'Auf Lager' %}
                       {% assign availability-color = "green" %}
-                    {% when 'Nur noch 1 verfügbar'%}
+                    {% when 'Nur noch 1 verfügbar' %}
                       {% assign availability-color = "orange" %}
-                    {% when 'Nur noch wenige verfügbar'%}
+                    {% when 'Nur noch wenige verfügbar' %}
                       {% assign availability-color = "yellow" %}
-                    {% when 'Nicht verfügbar'%}
+                    {% when 'Nicht verfügbar' %}
                       {% assign availability-color = "red" %}
                     {% else %}
                       {% assign availability-color = "green" %}
-                  {%endcase%}
+                  {% endcase %}
                   <div class="clearfix">
                     <label class="pull-left">Verfügbarkeit</label>
-                    <p style= "color:{{availability-color}}" class="product-availability">{{page.availability}}</p>
+                    <p style= "color:{{availability-color}}" class="product-availability">{{ page.availability }}</p>
                   </div>
                   {% endif %}
                   <!---------------------------------------->                  

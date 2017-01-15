@@ -54,12 +54,14 @@ layout: default
                   {% endif %}
                   {% if page.colors %}
                   <div class="clearfix">
+      
                     <label class="pull-left">Farben:</label>
                     <select name="color" class="item_color form-control">
                       {% for color in page.colors %}
-                      <option value="#{{ color.code }}" style="background:#fff">{{ color.name }}</option>
+                      <option id="{{ color.name }}" value="#{{ color.code }}" style="background:#fff">{{ color.name }}</option>
                       {% endfor %}
                     </select>
+     
                   </div>
                   {% endif %}
                   {% if page.sizes %}

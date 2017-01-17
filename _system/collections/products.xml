@@ -37,11 +37,12 @@
     <fieldset name="voucher" title="Gutscheine/Rabatt">
       <field name="voucher" type="text" label="Gutscheincode" filter="string" class="form-control" />
       <field name="discount" type="list" label="Rabatt" default="" class="form-control"> 
-        <option value="5">5%</option> 
-        <option value="10">10%</option>
-        <option value="15">15%</option>
-        <option value="20">20%</option>
-        <option value="25">25%</option>
+        <option value="0">kein Rabatt</option>
+        <option value="5.00">5%</option> 
+        <option value="10.00">10%</option>
+        <option value="15.00">15%</option>
+        <option value="20.00">20%</option>
+        <option value="25.00">25%</option>
       </field>
     </fieldset>
   </fields>

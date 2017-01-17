@@ -83,7 +83,7 @@ layout: default
                   </div>
                   <div class="clearfix">
                     <label class="pull-left">Preis:</label>
-                    {% if page.voucher %}
+                    {% if page.voucher and page.voucher.discount != 0 %}
                       {% assign price-old = page.price %}
                       {% assign discount = price-old | divided_by: 100.00 | times: page.discount %}
                       {% assign price = price-old | minus: discount %}
@@ -91,7 +91,7 @@ layout: default
                       {% assign price = page.price %}
                       {% if page.old_price %}{% assign price-old = page.old_price %}{% endif %}
                     {% endif %}
-                    <p class="product-price">{% if price-old %}<span>&euro;{{ price-old }}</span>{% endif %} &euro;{{ price }} inkl. MwSt</p>
+                    <p class="product-price">{% if price-old %}<span>&euro;{{ price-old | replace: ',', '.' }}</span>{% endif %} &euro;{{ price | replace: ',', '.' }} inkl. MwSt</p>
                   </div>
                   <!---------------------------------------->
                   {% if page.availability %}

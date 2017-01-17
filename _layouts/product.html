@@ -58,7 +58,7 @@ layout: default
                     <label class="pull-left">Farbe:</label>
                     <select name="color" class="item_color form-control">
                       {% for color in page.colors %}
-                      <option value="#{{ color.code }}">{{ color.name }}</option>
+                      <option value="{{ color.name }}">{{ color.name }}</option>
                       {% endfor %}
                     </select>
                   </div>
@@ -83,7 +83,7 @@ layout: default
                   </div>
                   <div class="clearfix">
                     <label class="pull-left">Preis:</label>
-                    {% if page.voucher == '<script type="text/javascript">getAllUrlParams().voucher;</script>' %}
+                    {% if page.voucher %}
                       {% assign price-old = page.price %}
                       {% assign discount = price-old | divided_by: 100.00 | times: page.discount %}
                       {% assign price = price-old | minus: discount %}

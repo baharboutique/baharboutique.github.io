@@ -91,7 +91,7 @@ layout: default
                       {% assign price = page.price %}
                       {% if page.old_price %}{% assign price-old = page.old_price %}{% endif %}
                     {% endif %}
-                    <p class="product-price">{% if price-old %}<span>&euro;{{ price-old | replace: ',', '.' }}</span>{% endif %} &euro;{{ price | replace: ',', '.' }} inkl. MwSt</p>
+                    <p class="product-price">{% if price-old %}<span>&euro;{{ price-old | replace: ',', '.' | round: 2 }}</span>{% endif %} &euro;{{ price | replace: ',', '.' | round: 2 }} inkl. MwSt</p>
                   </div>
                   <!---------------------------------------->
                   {% if page.availability %}

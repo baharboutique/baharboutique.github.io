@@ -56,7 +56,7 @@ layout: default
                   <div class="clearfix">
       
                     <label class="pull-left">Farben:</label>
-                    <select name="color" class="item_color form-control">
+                    <select name="color" class="item_color form-control" id="color_picker">
                       {% for color in page.colors %}
                       <option option class="{{ color.name }}" value="#{{ color.code }}" >{{ color.name }}</option>
                       {% endfor %}

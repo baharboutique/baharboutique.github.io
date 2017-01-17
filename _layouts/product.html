@@ -42,7 +42,7 @@ layout: default
                   </div>
                 </div>
                 <div class="product-information">
-                  {{ content }}
+
                   {% if page.brand %}
                   <div class="clearfix">
                     <label class="pull-left">Hersteller:</label> <span class="item_brand">{{ page.brand }}</span>
@@ -55,12 +55,16 @@ layout: default
                   {% endif %}
                   {% if page.colors %}
                   <div class="clearfix">
-                    <label class="pull-left">Farbe:</label>
-                    <select name="color" class="item_color form-control">
+
+      
+                    <label class="pull-left">Farben:</label>
+                    <select name="color" class="item_color form-control" id="color_picker">
                       {% for color in page.colors %}
-                      <option value="{{ color.name }}">{{ color.name }}</option>
+                      <option option class="{{ color.name }}" value="#{{ color.code }}" style="background-color: #{{ color.code }};">{{ color.name }}</option>
                       {% endfor %}
                     </select>
+                    
+     
                   </div>
                   {% endif %}
                   {% if page.sizes %}
@@ -106,19 +110,24 @@ layout: default
                       {% assign availability-color = "red" %}
                     {% else %}
                       {% assign availability-color = "green" %}
+            
                   {% endcase %}
+
                   <div class="clearfix">
                     <label class="pull-left">Verfügbarkeit</label>
                     <p style= "color:{{availability-color}}" class="product-availability">{{ page.availability }}</p>
                   </div>
+
                   {% endif %}
                   <!---------------------------------------->                  
+
                   <div class="header-1">
                     <div class="header-bottom-line"></div>
                   </div>
                   <div class="text-center">
                     <button class="btn-default-1 item_add"><i class="glyphicon glyphicon-shopping-cart"></i> Jetzt Kaufen</button>
                   </div>
+                   {{ content }}
                 </div>
               </div>
             </div>

@@ -11,14 +11,14 @@ layout: default
               <!--<h1 class="item_name">{{ page.title }}</h1>-->
               <div class="hidden">
                 {% if page.voucher and page.voucher.discount != 0 %}
-                  {% assign price-old = page.price %}
+                  {% assign price-old = page.price | replace: ',', '.' %}
                   {% assign discount = price-old | divided_by: 100.00 | times: page.discount %}
                   {% assign price = price-old | minus: discount | round: 2 %}
                 {% else %}
                   {% assign price = page.price %}
                   {% if page.old_price %}{% assign price-old = page.old_price %}{% endif %}
                 {% endif %}
-                <span class="item_price">&euro;{{ price | replace: ',', '.' }}</span>
+                <span class="item_price">&euro;{{ price | money }}</span>
                 <span class="item_url">{{ site.url }}{{ page.url }}</span>
                 {% assign img = page.gallery[0].src | remove_first: '_media/' %}
                 {% include img src=img width="90" class="item_thumb" title=page.title %}
@@ -91,7 +91,7 @@ layout: default
                   </div>
                   <div class="clearfix">
                     <label class="pull-left">Preis:</label>
-                    <p class="product-price">{% if price-old %}<span>&euro;{{ price-old | replace: ',', '.' }}</span>{% endif %} &euro;{{ price | replace: ',', '.' }} inkl. MwSt</p>
+                    <p class="product-price">{% if price-old %}<span>&euro;{{ price-old | money }}</span>{% endif %} &euro;{{ price | money }} inkl. MwSt</p>
                   </div>
                   <!---------------------------------------->
                   {% if page.availability %}

@@ -58,7 +58,7 @@ layout: default
                     <label class="pull-left">Farben:</label>
                     <ul name="color" class="item_color form-control" id="color_picker">
                       {% for color in page.colors %}
-                      <ul option class="{{ color.name }}" value="#{{ color.code }}" >{{ color.name }}</ul>
+                      <li option class="{{ color.name }}" value="#{{ color.code }}" ><a>{{ color.name }}</a></li>
                       {% endfor %}
                     </ul>
      

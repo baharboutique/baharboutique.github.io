@@ -13,7 +13,7 @@ layout: default
                 {% if page.voucher and page.voucher.discount != 0 %}
                   {% assign price-old = page.price %}
                   {% assign discount = price-old | divided_by: 100.00 | times: page.discount %}
-                  {% assign price = price-old | minus: discount %}
+                  {% assign price = price-old | minus: discount | round: 2 %}
                 {% else %}
                   {% assign price = page.price %}
                   {% if page.old_price %}{% assign price-old = page.old_price %}{% endif %}

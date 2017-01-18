@@ -29,12 +29,12 @@ layout: default
                   {% if item.voucher and item.voucher.discount != 0 %}
                     {% assign price-old = item.price | replace: ',', '.' %}
                     {% assign discount = price-old | divided_by: 100.00 | times: item.discount %}
-                    {% assign price = price-old | minus: discount | round: 2 | replace: '.', ',' %}
+                    {% assign price = price-old | minus: discount | round: 2 %}
                   {% else %}
                     {% assign price = item.price %}
-                    {% if item.old_price %}{% assign price-old = item.old_price | replace: '.', ',' %}{% else %}{% assign price-old = nil %}{% endif %}
+                    {% if item.old_price %}{% assign price-old = item.old_price %}{% else %}{% assign price-old = nil %}{% endif %}
                   {% endif %}
-                  <p class="product-price">{% if price-old %}<span>&euro;{{ price-old | money }}</span>{% endif %} &euro;{{ price | money }}</p>
+                  <p class="product-price">{% if price-old %}<span>&euro;{{ price-old | money | replace: '.', ',' }}</span>{% endif %} &euro;{{ price | money | replace: '.', ',' }}</p>
                 </div>
               </div>
             </article>

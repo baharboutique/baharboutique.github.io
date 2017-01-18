@@ -33,7 +33,7 @@
                 {% assign price = price-old | minus: discount | round: 2 | replace: '.', ',' %}
               {% else %}
                 {% assign price = item.price | replace: '.', ',' %}
-                {% if item.old_price %}{% assign price-old = item.old_price | replace: '.', ',' %}{% endif %}
+                {% if item.old_price %}{% assign price-old = item.old_price | replace: '.', ',' %}{% else %}{% assign price-old = nil %}{% endif %}
               {% endif %}
               <p class="product-price">{% if price-old %}<span>&euro;{{ price-old | money }}</span>{% endif %} &euro;{{ price | money }} inkl. MwSt</p>
               <div class="product-rating">

@@ -27,13 +27,13 @@
             </figure>
             <div class="product-caption">
               <a href="#" class="product-name" style="min-height: 75px;">{{ item.title }}</a>
-              {% if page.voucher and page.voucher.discount != 0 %}
-                {% assign price-old = page.price | replace: ',', '.' %}
-                {% assign discount = price-old | divided_by: 100.00 | times: page.discount %}
-                {% assign price = price-old | minus: discount | round: 2 %}
+              {% if item.voucher and item.voucher.discount != 0 %}
+                {% assign price-old = item.price | replace: ',', '.' %}
+                {% assign discount = price-old | divided_by: 100.00 | times: item.discount %}
+                {% assign price = price-old | minus: discount | round: 2 | replace: '.', ',' %}
               {% else %}
-                {% assign price = page.price %}
-                {% if page.old_price %}{% assign price-old = page.old_price %}{% endif %}
+                {% assign price = item.price | replace: '.', ',' %}
+                {% if item.old_price %}{% assign price-old = item.old_price | replace: '.', ',' %}{% endif %}
               {% endif %}
               <p class="product-price">{% if price-old %}<span>&euro;{{ price-old | money }}</span>{% endif %} &euro;{{ price | money }} inkl. MwSt</p>
               <div class="product-rating">

@@ -13,10 +13,10 @@ layout: default
                 {% if page.voucher and page.voucher.discount != 0 %}
                   {% assign price-old = page.price | replace: ',', '.' %}
                   {% assign discount = price-old | divided_by: 100.00 | times: page.discount %}
-                  {% assign price = price-old | minus: discount | round: 2 %}
+                  {% assign price = price-old | minus: discount | round: 2 | replace: '.', ',' %}
                 {% else %}
-                  {% assign price = page.price %}
-                  {% if page.old_price %}{% assign price-old = page.old_price %}{% endif %}
+                  {% assign price = page.price | replace: '.', ',' %}
+                  {% if page.old_price %}{% assign price-old = page.old_price | replace: '.', ',' %}{% endif %}
                 {% endif %}
                 <span class="item_price">&euro;{{ price | money }}</span>
                 <span class="item_url">{{ site.url }}{{ page.url }}</span>

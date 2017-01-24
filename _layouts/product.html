@@ -18,7 +18,7 @@ layout: default
                   {% assign price = page.price | replace: ',', '.' %}
                   {% if page.old_price %}{% assign price-old = page.old_price %}{% endif %}
                 {% endif %}
-                <span class="item_price">&euro;{{ price | money }}</span>
+                <span class="item_price">{{ price | money | replace: ',', '.'}}</span>
                 <span class="item_url">{{ site.url }}{{ page.url }}</span>
                 {% assign img = page.gallery[0].src | remove_first: '_media/' %}
                 {% include img src=img width="90" class="item_thumb" title=page.title %}

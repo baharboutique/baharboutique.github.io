@@ -33,8 +33,8 @@ simpleCart({
      shippingFlatRate: 5
 });*/
 
-//simpleCart.currency().decimal = ',';
-//simpleCart.currency().delimiter = '.';
+simpleCart.currency().decimal = ',';
+simpleCart.currency().delimiter = '.';
 simpleCart.bind( "afterAdd" , function( item ) {
     //toastr.success( item.get("name") + (item.get("params") ? " - " + item.get("params") : '') + " - " + item.get("size") + " was added to the basket." );
     $('#cartModal').modal('show');

@@ -15,10 +15,10 @@ layout: default
                   {% assign discount = price-old | divided_by: 100.00 | times: page.discount %}
                   {% assign price = price-old | minus: discount | round: 2 %}
                 {% else %}
-                  {% assign price = page.price | replace: '.', ',' %}
+                  {% assign price = page.price %}
                   {% if page.old_price %}{% assign price-old = page.old_price %}{% endif %}
                 {% endif %}
-                <span class="item_price">&euro;{{ price | money | replace: '.', ',' }}</span>
+                <span class="item_price">{{ price | money | replace: ',', '.'}}</span>
                 <span class="item_url">{{ site.url }}{{ page.url }}</span>
                 {% assign img = page.gallery[0].src | remove_first: '_media/' %}
                 {% include img src=img width="90" class="item_thumb" title=page.title %}

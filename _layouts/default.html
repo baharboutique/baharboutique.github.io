@@ -21,7 +21,7 @@
     <![endif]-->
     
     {% js vendor/modernizr %}
-    
+    {% js app %}
 
     <script src="//load.sumome.com/" data-sumo-site-id="31ff556254aa7b03f684b87fbb084595bd424230d02bf10b53e9cebfc3bd9801" async="async"></script>
     <meta name="google-site-verification" content="sInJwhiwH1-JHMDoqekmVmmMjfyD1xKPwrVQAjYXsO0" />
@@ -44,7 +44,7 @@
                     </a>
                   </div><!-- /header-mini-cart -->
                   <div class="top-search-form  pull-right">
-                    <form action="{{ site.url }}search">
+                    <form action="{{ site.url }}/search">
                       <input name="q" type="text" placeholder="Search ...">
                       <button type="submit"><i class="icon-search"></i></button>
                     </form>  
@@ -151,9 +151,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <a href="{{ site.baseurl }}" class="logo-copy pull-left"></a>
+              <a href="{{ site.url }}" class="logo-copy pull-left"></a>
               <p class="pull-left">
-                Copyright © 2016 <a href="#">baharboutique.com</a> <br>All rights reserved.
+                Copyright © 2017 <a href="{{ site.url }}">baharboutique.com</a> <br>All rights reserved.
               </p>
               <ul class="footer-payments pull-right">
                 <li><img src="img/payment-maestro.jpg" alt="payment" /></li>
@@ -169,7 +169,7 @@
       </div>
     </footer>
     <!-- End Section footer -->
-    {% js app %}
+    
     <!--script src="js/vendor/tab.js"></script-->
     <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
     <script type="text/javascript">

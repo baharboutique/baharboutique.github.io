@@ -10,7 +10,7 @@
         </div>
       </div>
       <ul class="row list-unstyled" id="products" style="min-height: 442px;">
-        {% assign products = site.products | where: 'published', 1 %}
+        {% assign products = site.products | where: 'published', 1 | where: 'highlight', 1 %}
         {% for item in products %}
         <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center animated fadeInRight">
           <div class="product">

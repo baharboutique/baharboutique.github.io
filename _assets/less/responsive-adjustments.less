@@ -68,6 +68,17 @@
 }
 
 @media (min-width: 480px) and (max-width: 767px) { /* Mobile Landscape */
+  .nav-justified > li > a{
+      margin-bottom: 0;
+  }
+  #header .header-main .navbar-collapse{
+      z-index: 999;
+      position: relative;
+      background-color: @color4;  
+  }
+  .navbar-nav .open .dropdown-menu > li > a {height: 40px; line-height: 30px;}
+  #header .navbar-main .dropdown-submenu > .dropdown-menu {position: relative; left: 0;padding-left:30px;}
+
   .top-search-form{
       display: none;
   }

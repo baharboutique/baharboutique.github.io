@@ -87,23 +87,14 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 479px) { /* Mobile Landscape */
-
+@media (min-width: 768px) and (max-width: 995px) { /* Tablet Landscape */
+  .nav > li > a{
+        color:#333; padding: 13px 8px; border-top: 2px solid transparent; .raleway; text-transform: uppercase;
+  }
 
 }
 
-@media (max-width: 995px) { /* Mobile Portrait */
-  .nav-justified > li > a{
-      margin-bottom: 0;
-  }
-  #header .header-main .navbar-collapse{
-      z-index: 999;
-      position: relative;
-      background-color: @color4;  
-  }
-  .product-image{margin-bottom: 30px; padding-left: 0;}
-  .navbar-nav .open .dropdown-menu > li > a {height: 40px; line-height: 30px;}
-  #header .navbar-main .dropdown-submenu > .dropdown-menu {position: relative; left: 0;padding-left:30px;}
+@media (max-width: 320px) { /* Mobile Portrait */
 
 }
 

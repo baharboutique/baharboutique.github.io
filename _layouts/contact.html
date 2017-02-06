@@ -32,45 +32,10 @@ layout: default
                             <h3>Kontaktformular</h3>
                             <div class="header-bottom-line"></div>
                         </div>
-                        <form method="post" action="#">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="inputFirstName" class="control-label">Name:<span class="text-error">*</span></label>
-                                        <div>
-                                            <input type="text" class="form-control" id="inputFirstName">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="inputLastName" class="control-label">Email:<span class="text-error">*</span></label>
-                                        <div>
-                                            <input type="email" class="form-control" id="inputLastName">
-                                        </div>
-                                    </div>
-                                </div> 
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="inputSubject" class="control-label">Subject:<span class="text-error">*</span></label>
-                                        <div>
-                                            <input type="text" class="form-control" id="inputSubject">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="inputText" class="control-label">Message:<span class="text-error">*</span></label>
-                                        <div>
-                                            <textarea class="form-control" id="inputText"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <input type="submit" class="btn-default-1" value="Submit">
-                        </form>
+                        <div class="cognito">
+                          <script src="https://services.cognitoforms.com/s/-CeDZMca3EyFaiI6rXZtFQ"></script>
+                          <script>Cognito.load("forms", { id: "1" });</script>
+                        </div>
                     </div>
                 </div>
             </div>

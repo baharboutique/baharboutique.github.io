@@ -23,7 +23,7 @@ script:
 - bower install
 - bundle exec jekyll build
 - set +e
-- bundle exec htmlproofer ./_site  --assume-extension --allow-hash-href --check-html --http-status-ignore 0
+- bundle exec htmlproofer ./_site  --only-4xx --assume-extension --allow-hash-href --check-html --http-status-ignore 0
 - cd _site
 - touch .nojekyll
 - git init

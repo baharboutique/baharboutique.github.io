@@ -33,39 +33,19 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-4">
-                      <div class="socials">
-                        <a rel="nofollow" href="{{ site.profiles.facebook }}"><i class="icon-facebook icon-large"></i></a>
-                        <a rel="nofollow" href="{{ site.profiles.twitter }}"><i class="icon-twitter icon-large"></i></a>
-                        <a rel="nofollow" href="{{ site.profiles.google }}"><i class="icon-google icon-large"></i></a>
-                        <a rel="nofollow" href="{{ site.profiles.pinterest }}"><i class="icon-pinterest icon-large"></i></a>
-                      </div>
+                      
                   </div>
                   <div class="col-md-4">
                       <div id="first-welcome">
-                          <p>Gratis Versand</p>
+                          <p>Willkommen auf unserem Onlineshop!</p>
                       </div>
-                      <script type="text/javascript" src="https://ee-seal.websecurity.symantec.com/geteeseal?host_name=CUSTOMER_DOMAIN&amp;size=S&amp;lang=en"></script>
                   </div>
                   <div class="col-md-4">
-                      <div class="pull-right">
-                          <!-- header - language -->
-                          <div id="lang" class="pull-right">
-                              <a href="" class="lang-title"><img src="img/f-gb.png" alt="English" title="English"> English <i class="icon-angle-down"></i> </a>
-                              <ul class="list-unstyled lang-item">
-                                  <li class="active"><a href=""><img src="img/f-gb.png" alt="English" title="English"> English</a></li>
-                                  <li><a href=""><img src="img/f-fr.png" alt="French" title="French"> French</a></li>
-                              </ul>
-                          </div>
-                          <!-- /header - language -->
-                          <!-- header - currency -->
-                          <div class="currency pull-right">
-                              <ul class="currency-list list-unstyled list-inline">
-                                 
-                                  <li><a href="#" class="active">€</a></li>
-                                  <li><a href="#">£</a></li>
-                              </ul>
-                          </div>
-                          <!-- /header - currency -->
+                      <div id="first-wel" class="pull-right">
+                          <a rel="nofollow" href="{{ site.profiles.facebook }}"><i class="icon-facebook icon-large"></i></a>
+                          <a rel="nofollow" href="{{ site.profiles.twitter }}"><i class="icon-twitter icon-large"></i></a>
+                          <a rel="nofollow" href="{{ site.profiles.google }}"><i class="icon-google icon-large"></i></a>
+                          <a rel="nofollow" href="{{ site.profiles.pinterest }}"><i class="icon-pinterest icon-large"></i></a>
                       </div>
                   </div>
               </div>
@@ -91,7 +71,9 @@
                       <button type="submit"><i class="icon-search"></i></button>
                     </form>  
                   </div>
-                  
+                  <div class="ssl-seal pull-right">
+                    <script type="text/javascript" src="https://ee-seal.websecurity.symantec.com/geteeseal?host_name=baharboutique.com&amp;size=S&amp;lang=en"></script>
+                  </div>
                 </div>
               </div>
             </div>
@@ -183,7 +165,7 @@
                 <h3>Kontakt</h3>
               </div>
               <p><strong>Tel:</strong> {{ site.tel }}<br><strong>Email:</strong> {{ site.email }}</p>
-              <p><strong>{{ site.title }}</strong><br>{{ site.address }}, {{ site.zipcity }}, {{ site.country }}</p>
+              <p><strong>{{ site.title }}</strong><br>{{ site.address }}, <br>{{ site.zipcity }}, {{ site.country }}</p>
               <p><a rel="nofollow" target="_blank" href="//goo.gl/maps/XmjinLXekb72"><i class="icon-map-marker"></i> Bei Google Maps finden</a></p>
             </div>
             <div class="col-md-3">

@@ -167,7 +167,7 @@ Revolution slider
     }
 
     .container { position:relative; }
-    .header-top-row { width:100%; background-color:@color1; position: relative; height: 35px; line-height: 42px; }
+    .header-top-row { width:100%; background-color:@color1; position: relative; height: 35px; line-height: 35px; }
     .header-top-row:after{
         content: '';
         position: absolute;
@@ -203,17 +203,21 @@ Revolution slider
   
     .top-social-icons{
         a{
-            display: inline; width: 30px; height: 30px; text-align: center; .border-radius(30px); margin:0 5px 0 0; text-decoration: none;
+            display: inline; width: 35px; height: 35px; text-align: center; .border-radius(50%); margin:0 5px 0 0; text-decoration: none;
             color: #ccc;vertical-align: middle; line-height:35px; .transition(all, .3s, ease); line-height: 35px;
             &:hover{
                 background-color: @color5;color: @color4; border-color: @color5;
             }
+            -webkit-border-radius: 50%px;
+            -moz-border-radius: 50%px;
+            border-radius: 50%px;
         }
     }
     .top-custom-icons{
         line-height: 35px;
-        span{
+        div{
             color: @color2;
+            height: 35px;
         }
     }
     .currency{

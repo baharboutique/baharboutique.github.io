@@ -89,7 +89,7 @@
                 <ul class="nav navbar-nav">
                   {% for item in site.categories | where: 'published', 1 %}
                   <li><a href="{{ item.url }}">{{ item.menutitle }}</a></li>
-                   {% endfor %}
+                  {% endfor %}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                   {% for item in site.pages | where: 'published', 1 %}{% unless item.slug == "index" %}{% unless item.parent %}{% unless item.menu == false %}
@@ -168,12 +168,7 @@
               <p><a rel="nofollow" target="_blank" href="//goo.gl/maps/XmjinLXekb72"><i class="icon-map-marker"></i> Bei Google Maps finden</a></p>
             </div>
             <div class="col-md-3">
-              <table width="135" border="0" cellpadding="2" cellspacing="0" title="Click to Verify - This site chose Symantec SSL for secure e-commerce and confidential communications.">
-                <tr>
-                <td width="135" align="center" valign="top"><script type="text/javascript" src="https://seal.websecurity.norton.com/getseal?host_name=BAHARBOUTIQUE.COM&amp;size=S&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=de"></script><br />
-                <a href="https://www.symantec.com/de/de/ssl-certificates" rel="nofollow" target="_blank"  style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">&#220;ber SSL-Zertifikate</a></td>
-                </tr>
-              </table>
+              <script type="text/javascript" src="https://ee-seal.websecurity.symantec.com/geteeseal?host_name=baharboutique.com&amp;size=S&amp;lang=en" async="async"></script>
             </div>
           </div>
         </div>
